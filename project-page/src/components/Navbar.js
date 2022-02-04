@@ -1,42 +1,47 @@
 import React from 'react';
+import 'flowbite';
 
 function Navbar (props) {
-  return (
-      <>
-        <div className="bg-gray-100 font-sans w-full min-h-screen m-0">
-        	<div className="bg-white shadow">
-            <div className="container mx-auto px-4">
-              <div className="flex items-center justify-between py-4">
-                <div className="font-bold text-blue-600 hover:text-blue-800 text-lg">{props.title}</div>
-                <div className="hidden sm:flex sm:items-center">
-                  <a href="/" className="text-gray-800 text-sm font-semibold hover:text-blue-600 mr-4">{props.navItem1}</a>
-                  <a href="/" className="text-gray-800 text-sm font-semibold hover:text-blue-600 mr-4">{props.navItem2}</a>
-                  <a href="/" className="text-gray-800 text-sm font-semibold hover:text-blue-600">{props.navItem3}</a>
+    return (
+        <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded">
+            <div class="container flex flex-wrap justify-between items-center mx-auto">
+                <a href="/" class="flex">
+                    <span class="self-center mx-3 text-lg font-semibold whitespace-nowrap">Shre Yash</span>
+                </a>
+                <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="mobile-menu-2" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                    <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+                    <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                        <li>
+                            <a href="/" class="block py-2 pr-4 pl-3 text-white bg-violet-700 rounded md:bg-transparent md:text-violet-700 md:p-0" aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="/" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0">About</a>
+                        </li>
+                        <li>
+                            <a href="/" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0">Services</a>
+                        </li>
+                        <li>
+                            <a href="/" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="/" class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-                <div className="sm:hidden cursor-pointer">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-blue-600" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M12.9499909,17 C12.7183558,18.1411202 11.709479,19 10.5,19 C9.29052104,19 8.28164422,18.1411202 8.05000906,17 L3.5,17 C3.22385763,17 3,16.7761424 3,16.5 C3,16.2238576 3.22385763,16 3.5,16 L8.05000906,16 C8.28164422,14.8588798 9.29052104,14 10.5,14 C11.709479,14 12.7183558,14.8588798 12.9499909,16 L20.5,16 C20.7761424,16 21,16.2238576 21,16.5 C21,16.7761424 20.7761424,17 20.5,17 L12.9499909,17 Z M18.9499909,12 C18.7183558,13.1411202 17.709479,14 16.5,14 C15.290521,14 14.2816442,13.1411202 14.0500091,12 L3.5,12 C3.22385763,12 3,11.7761424 3,11.5 C3,11.2238576 3.22385763,11 3.5,11 L14.0500091,11 C14.2816442,9.85887984 15.290521,9 16.5,9 C17.709479,9 18.7183558,9.85887984 18.9499909,11 L20.5,11 C20.7761424,11 21,11.2238576 21,11.5 C21,11.7761424 20.7761424,12 20.5,12 L18.9499909,12 Z M9.94999094,7 C9.71835578,8.14112016 8.70947896,9 7.5,9 C6.29052104,9 5.28164422,8.14112016 5.05000906,7 L3.5,7 C3.22385763,7 3,6.77614237 3,6.5 C3,6.22385763 3.22385763,6 3.5,6 L5.05000906,6 C5.28164422,4.85887984 6.29052104,4 7.5,4 C8.70947896,4 9.71835578,4.85887984 9.94999094,6 L20.5,6 C20.7761424,6 21,6.22385763 21,6.5 C21,6.77614237 20.7761424,7 20.5,7 L9.94999094,7 Z M7.5,8 C8.32842712,8 9,7.32842712 9,6.5 C9,5.67157288 8.32842712,5 7.5,5 C6.67157288,5 6,5.67157288 6,6.5 C6,7.32842712 6.67157288,8 7.5,8 Z M16.5,13 C17.3284271,13 18,12.3284271 18,11.5 C18,10.6715729 17.3284271,10 16.5,10 C15.6715729,10 15,10.6715729 15,11.5 C15,12.3284271 15.6715729,13 16.5,13 Z M10.5,18 C11.3284271,18 12,17.3284271 12,16.5 C12,15.6715729 11.3284271,15 10.5,15 C9.67157288,15 9,15.6715729 9,16.5 C9,17.3284271 9.67157288,18 10.5,18 Z"/>
-                  </svg>
-                </div>
-              </div>
-              <div className="block sm:hidden bg-white border-t-2 py-2">
-                <div className="flex flex-col">
-                  <a href="/" className="text-gray-800 text-sm font-semibold hover:text-blue-600 mb-1">{props.navItem1}</a>
-                  <a href="/" className="text-gray-800 text-sm font-semibold hover:text-blue-600 mb-1">{props.navItem2}</a>
-                  <a href="/" className="text-gray-800 text-sm font-semibold hover:text-blue-600 mb-1">{props.navItem3}</a>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </>
-      );
+        </nav>
+
+    );
 }
 Navbar.defaultProps = {
     title: 'ShreYash',
     navItem1: 'Home',
     navItem2: 'About',
     navItem3: 'Blog',
-    
+
 }
 export default Navbar;
