@@ -5,7 +5,7 @@ function Card (props) {
         <div class="flex justify-center">
             <div class="rounded-lg shadow-lg bg-white max-w-sm">
                 <a href={props.demoLink} data-mdb-ripple="true" data-mdb-ripple-color="light">
-                <img class="rounded-t-lg" src={props.img} alt={props.title}/>
+                <img class="rounded-t-lg" src={props.img} alt=""/>
                 </a>
             <div class="p-6">
             <h5 class="text-gray-900 text-xl font-medium mb-2">{props.title}</h5>
