@@ -9,9 +9,10 @@
 ## Web Games
 
 <ul>
-<li><a href="https://iamshre-yash.github.io/myProjects/pigGame/">Pig Game -HTML,CSS,JavaScript</a></li>
-<li><a href="https://iamshre-yash.github.io/myProjects/guessMyNumber/">Guess My Number -HTML,CSS,JavaScript</a></li>
-<li><a href="https://iamshre-yash.github.io/myProjects/scoreKeeper/">Score Keeper -HTML,CSS,JavaScript</a></li>
+<li><a href="https://iamshre-yash.github.io/Wordle-Clone/">Wordle Clone 🚾 </a></li>
+<li><a href="https://iamshre-yash.github.io/myProjects/pigGame/">Pig Game 🐷</a></li>
+<li><a href="https://iamshre-yash.github.io/myProjects/guessMyNumber/">Guess My Number 🔢</a></li>
+<li><a href="https://iamshre-yash.github.io/myProjects/scoreKeeper/">Score Keeper 🆚</a></li>
 </ul>
 
 ## Web Pages
@@ -20,3 +21,4 @@
 <li><a href="https://iamshre-yash.github.io/myProjects/headerFooter/">Header Footer</a></li>
 <li><a href="https://iamshre-yash.github.io/myProjects/pricingTable/">Pricing Tables</a></li>
 </ul>
+>
