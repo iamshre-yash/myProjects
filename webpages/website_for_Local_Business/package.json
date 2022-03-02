@@ -1,8 +1,8 @@
 {
-  "name": "project",
+  "name": "website_for_local_business",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "postcss.config.js",
   "scripts": {
     "start": "vite"
   },
