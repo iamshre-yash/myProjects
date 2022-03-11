@@ -1,9 +1,9 @@
 {
     [
         {
-             
-              
-             
+
+
+
             "question": "What does AD stand for in relation to Windows Operating Systems? ",
             "correct_answer": "Active Directory",
             "incorrect_answers": [
@@ -13,9 +13,9 @@
       ]
     },
         {
-             
-              
-             
+
+
+
             "question": "Nvidia&#039;s headquarters are based in which Silicon Valley city?",
             "correct_answer": "Santa Clara",
             "incorrect_answers": [
@@ -25,9 +25,9 @@
       ]
     },
         {
-             
-              
-             
+
+
+
             "question": "While Apple was formed in California, in which western state was Microsoft founded?",
             "correct_answer": "New Mexico",
             "incorrect_answers": [
@@ -37,9 +37,9 @@
       ]
     },
         {
-             
-              
-             
+
+
+
             "question": "What is the name of the default theme that is installed with Windows XP?",
             "correct_answer": "Luna",
             "incorrect_answers": [
@@ -49,8 +49,8 @@
       ]
     },
         {
-             
-              
+
+
             "difficulty": "hard",
             "question": "Which of these was the name of a bug found in April 2014 in the publicly available OpenSSL cryptography library?",
             "correct_answer": "Heartbleed",
@@ -61,9 +61,9 @@
       ]
     },
         {
-             
-              
-             
+
+
+
             "question": "How fast is USB 3.1 Gen 2 theoretically?",
             "correct_answer": "10 Gb/s",
             "incorrect_answers": [
@@ -73,9 +73,9 @@
       ]
     },
         {
-             
-              
-             
+
+
+
             "question": "What does the term GPU stand for?",
             "correct_answer": "Graphics Processing Unit",
             "incorrect_answers": [
@@ -85,8 +85,8 @@
       ]
     },
         {
-             
-              
+
+
             "difficulty": "hard",
             "question": "America Online (AOL) started out as which of these online service providers?",
             "correct_answer": "Quantum Link",
@@ -97,8 +97,8 @@
       ]
     },
         {
-             
-              
+
+
             "difficulty": "hard",
             "question": "What was the first company to use the term &quot;Golden Master&quot;?",
             "correct_answer": "Apple",
@@ -109,9 +109,9 @@
       ]
     },
         {
-             
-              
-             
+
+
+
             "question": "The name of technology company HP stands for what?",
             "correct_answer": "Hewlett-Packard",
             "incorrect_answers": [
