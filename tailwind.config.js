@@ -1,7 +1,10 @@
 module.exports = {
-  content: ["*"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+    content: ["*"],
+    theme: {
+        extend: {},
+        fontFamily: {
+            poppins: ["Poppins", "sans-serif"],
+        },
+    },
+    plugins: [],
+};
