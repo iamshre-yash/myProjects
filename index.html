@@ -6,31 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - ShreYash</title>
     <meta name="description" content="I'm Shre Yash a Front-End Web Developer & UI/UX Designer ,with extensive Knowledge, Exploring new Web technologies and Using on Projects.">
-    <link rel="icon" type="image/webp" href="assets/shreyash.webp">
     <meta name="google-site-verification" content="ife4aXz3umLOboyLqlJwNysx8jDxtGyiJUTiWMjiH5Y" />
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/ishre-yash/ishre-yash/main/favicon.ico">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ishre-yash/ishre-yash/main/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ishre-yash/ishre-yash/main/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ishre-yash/ishre-yash/main/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ishre-yash/ishre-yash/main/android-chrome-512x512.png" sizes="512x512">
+    
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="assets/style.css" type="text/css" media="all" />
     <link rel="stylesheet" href="assets/tailwind.css" type="text/css" media="all" />
+
 </head>
+<body class="font-sans antialiased text-black dark:text-white leading-normal tracking-wider bg-cover dark:bg-slate-900 bg-gray-200" >
+    
+    <button
+  class="absolute top-5 right-5 w-10 h-5 md:w-12 md:h-6 rounded-2xl bg-white flex items-center transition duration-300 focus:outline-none shadow"
+  onclick="toggleTheme()">
+  <div
+    id="switch-toggle"
+    class="w-6 h-6 md:w-7 md:h-7 relative rounded-full transition duration-500 transform bg-yellow-500 -translate-x-2 p-1 text-white ">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+    </svg>
+  </div>
+</button>
 
-<body class="font-sans antialiased text-white leading-normal tracking-wider bg-cover bg-slate-900">
 
-    <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-6 lg:my-6 mt-10">
-        <!--Main Col-->
-        <div id="profile" class="w-full rounded-lg shadow-2xl bg-slate-800 mx-6 lg:mx-2">
+    <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto mt-20 md:mt-10">
+        <div id="profile" class="w-full rounded-lg shadow-2xl dark:bg-slate-800 bg-white mx-6 lg:mx-2">
             <div class="p-4 md:p-12 text-center">
                 <h1 class="text-3xl font-bold pt-8 font-poppins">ShreYash</h1>
-                <div class="mx-auto  w-4/5 pt-3 border-b-2 border-white opacity-25"></div>
+                <div class="mx-auto  w-4/5 pt-3 border-b-2 border-black dark:border-white opacity-25"></div>
                 <p class="pt-4 text-base font-bold flex items-center justify-center font-poppins">
                     <span class="auto-input">Front End Developer</span>
                 </p>
-                <a class="pt-2 text-slate-400 text-xs flex items-center justify-center hover:text-slate-200 hover:scale-105 font-poppins" href="https://ishreyash.com/"><svg class="h-4 fill-current text-slate-400 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <a class="pt-2 text-gray-600  dark:text-slate-300 text-xs flex items-center justify-center hover:text-blue-600 dark:hover:text-slate-200 hover:scale-105 font-poppins" href="https://ishreyash.com/"><svg class="h-4 fill-current text-blue-700 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                         <path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z" />
                     </svg>ishreyash.com</a>
-                <a class="pt-2 text-slate-400 text-xs flex items-center justify-center hover:text-slate-200 hover:scale-105 font-poppins" href="https://blog.ishreyash.com/"><svg class="h-4 fill-current text-slate-400  pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <a class="pt-2 text-gray-600 dark:text-slate-300 text-xs flex items-center justify-center hover:text-blue-600 hover:scale-105 font-poppins" href="https://blog.ishreyash.com/"><svg class="h-4 fill-current text-blue-700  pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                         <path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z" />
                     </svg>blog.ishreyash.com</a>
-                <p class="pt-8 text-sm font-poppins select-none text-slate-400">
+                <p class="pt-8 text-sm font-poppins select-none text-gray-700 dark:text-slate-400">
                     Programming has always been my passion! I have been doing it for years and I enjoy what I do. My best languages are Python ,React , Javascript and I also learn UI/UX Design. However, I can excel in all the languages I provided. I am a fast learner and
                     I believe that any project always needs a lot of testing before it goes through the acceptance testing, since that is what makes projects successful. I am very friendly, and my motto is not to think outside the box but build a bigger
                     box!
@@ -38,8 +55,8 @@
             </div>
         </div>
     </div>
-    <a class="text-4xl font-bold flex flex-col justify-center items-center text-white hover:text-slate-100" href="https://github.com/ishre-yash">My Projects</a>
-    <section class="text-white body-font">
+    <a class="text-4xl font-bold flex flex-col mt-8 justify-center items-center text-blue-700 dark:text-white " href="https://github.com/ishre-yash">My Projects</a>
+    <section class="text-black dark:text-white body-font">
         <div class="container px-5 py-14 mx-auto flex flex-wrap">
             <div class="flex flex-wrap w-full">
                 <div class=" md:pr-10 md:py-6">
@@ -377,11 +394,11 @@
 
 
                     <div class="flex relative">
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-white inline-flex items-center justify-center text-white relative z-10">
+                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-700 inline-flex items-center justify-center text-white relative z-10">
 
                         </div>
                         <div class="flex-grow pl-4">
-                            <a class="font-medium title-font text-lg text-white hover:underline mb-1 tracking-wider" href="/">Starting Web Development</a>
+                            <a class="font-medium title-font text-lg text-green-700 hover:underline mb-1 tracking-wider" href="/">Starting Web Development</a>
                             <p class="leading-relaxed">starting-August,2021</p>
                         </div>
                     </div>
@@ -389,35 +406,13 @@
             </div>
         </div>
     </section>
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="assets/main.js"></script>
 
    
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        var typed = new Typed(".auto-input", {
-            strings: [
-                ' ',
-                'UI/UX Designer',
-                'React',
-                'Python',
-                'JavaScript'
-            ],
-            typeSpeed: 100,
-            backSpeed: 100,
-            loop: true,
-            showCursor: true,
-            cursorChar: '|',
-            loopCount: Infinity
-        })
-    </script>
-    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-    <script>
-        kofiWidgetOverlay.draw('ishreyash', {
-            'type': 'floating-chat',
-            'floating-chat.donateButton.text': 'Support me',
-            'floating-chat.donateButton.background-color': '#323842',
-            'floating-chat.donateButton.text-color': '#fff'
-        });
-    </script>
+    
+    
 </body>
 
 </html>
