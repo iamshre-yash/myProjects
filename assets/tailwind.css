@@ -2,3 +2,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* --==================== scroll up ====================-- */
+
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    opacity: .8;
+    padding: 0 .3rem;
+    border-radius: .4rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+}
+
+
+/* Show scroll */
+
+.show-scroll {
+    bottom: 1.5rem;
+}

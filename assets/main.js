@@ -1,19 +1,21 @@
 var typed = new Typed(".auto-input", {
-  strings: [" ", "UI/UX Designer", "React", "Python", "JavaScript"],
-  typeSpeed: 100,
-  backSpeed: 100,
-  loop: true,
-  showCursor: true,
-  cursorChar: "|",
-  loopCount: Infinity,
+    strings: [" ", "UI/UX Designer", "React", "Python", "JavaScript"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true,
+    showCursor: true,
+    cursorChar: "|",
+    loopCount: Infinity,
 });
 
 kofiWidgetOverlay.draw("ishreyash", {
-  type: "floating-chat",
-  "floating-chat.donateButton.text": "Support me",
-  "floating-chat.donateButton.background-color": "#323842",
-  "floating-chat.donateButton.text-color": "#fff",
+    type: "floating-chat",
+    "floating-chat.donateButton.text": "Support me",
+    "floating-chat.donateButton.background-color": "#323842",
+    "floating-chat.donateButton.text-color": "#fff",
 });
+
+/*==================== Dark Mode ====================*/
 
 const switchToggle = document.querySelector('#switch-toggle');
 const html = document.querySelector('html');
@@ -31,36 +33,38 @@ const lightIcon = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="
 
 // Jika ada isDarkmode di localstorage 
 if (localDarkmode) {
-  isDarkmode = localDarkmode
-  html.classList.add('dark')
-} else {
-  html.classList.remove('dark')
-}
-
-function toggleTheme (){
-  isDarkmode = !isDarkmode
-  localStorage.setItem('isDarkmode', isDarkmode)
-  switchTheme()
-}
-
-function switchTheme (){
-  if (isDarkmode) {
+    isDarkmode = localDarkmode
     html.classList.add('dark')
-    switchToggle.classList.remove('bg-yellow-500','-translate-x-2')
-    switchToggle.classList.add('bg-gray-700','translate-x-full')
-    setTimeout(() => {
-      switchToggle.innerHTML = darkIcon
-    }, 250);
-  } else {
+} else {
     html.classList.remove('dark')
-    switchToggle.classList.add('bg-yellow-500','-translate-x-2')
-    switchToggle.classList.remove('bg-gray-700','translate-x-full')
-    setTimeout(() => {
-      switchToggle.innerHTML = lightIcon
-    }, 250);
-  }
+}
+
+function toggleTheme() {
+    isDarkmode = !isDarkmode
+    localStorage.setItem('isDarkmode', isDarkmode)
+    switchTheme()
+}
+
+function switchTheme() {
+    if (isDarkmode) {
+        html.classList.add('dark')
+        setTimeout(() => {
+            switchToggle.innerHTML = darkIcon
+        }, 250);
+    } else {
+        html.classList.remove('dark')
+        setTimeout(() => {
+            switchToggle.innerHTML = lightIcon
+        }, 250);
+    }
 }
 
 switchTheme()
 
-
+/*==================== SHOW SCROLL UP ====================*/
+function scrollUp() {
+    const scrollUp = document.getElementById('scroll-up');
+    if (this.scrollY >= 560) scrollUp.classList.add('show-scroll');
+    else scrollUp.classList.remove('show-scroll');
+}
+window.addEventListener('scroll', scrollUp);
