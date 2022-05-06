@@ -1,567 +1,1245 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects - ShreYash</title>
-    <meta name="description" content="I'm Shre Yash a Front-End Web Developer & UI/UX Designer ,with extensive Knowledge, Exploring new Web technologies and Using on Projects." />
-    <meta name="google-site-verification" content="ife4aXz3umLOboyLqlJwNysx8jDxtGyiJUTiWMjiH5Y" />
-    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/ishre-yash/ishre-yash/main/favicon.ico" />
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ishre-yash/ishre-yash/main/favicon-16x16.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ishre-yash/ishre-yash/main/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ishre-yash/ishre-yash/main/android-chrome-192x192.png" sizes="192x192" />
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ishre-yash/ishre-yash/main/android-chrome-512x512.png" sizes="512x512" />
+    <meta
+      name="description"
+      content="I'm Shre Yash a Front-End Web Developer & UI/UX Designer ,with extensive Knowledge, Exploring new Web technologies and Using on Projects."
+    />
+    <meta
+      name="google-site-verification"
+      content="ife4aXz3umLOboyLqlJwNysx8jDxtGyiJUTiWMjiH5Y"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://raw.githubusercontent.com/ishre-yash/ishre-yash/main/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://raw.githubusercontent.com/ishre-yash/ishre-yash/main/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://raw.githubusercontent.com/ishre-yash/ishre-yash/main/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://raw.githubusercontent.com/ishre-yash/ishre-yash/main/android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://raw.githubusercontent.com/ishre-yash/ishre-yash/main/android-chrome-512x512.png"
+      sizes="512x512"
+    />
 
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <link rel="stylesheet" href="assets/style.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="assets/tailwind.css" type="text/css" media="all" />
-</head>
+    <link
+      rel="stylesheet"
+      href="assets/style.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/tailwind.css"
+      type="text/css"
+      media="all"
+    />
+  </head>
 
-<body class="mx-auto w-full max-w-4xl font-poppins antialiased text-black dark:text-white leading-normal tracking-wider dark:bg-slate-900 bg-[#fafdff]">
+  <body
+    class="mx-auto w-full max-w-4xl bg-[#fafdff] font-poppins leading-normal tracking-wider text-black antialiased dark:bg-slate-900 dark:text-white"
+  >
     <main>
-        <!--==================== Dark Mode ====================-->
-        <div class="flex justify-end mt-8 md:mt-12 mr-4">
-            <div class="w-5 h-5 md:w-6 md:h-6 flex items-center transition duration-300" onclick="toggleTheme()">
-                <div id="switch-toggle" class="w-5 h-5 md:w-6 md:h-6 relative rounded-full transition duration-500 transform -translate-x-2 text-gray-600 dark:text-gray-100">
-                </div>
-            </div>
+      <!--==================== Dark Mode ====================-->
+      <div class="mt-8 mr-4 flex justify-end md:mt-12">
+        <div
+          class="flex h-5 w-5 items-center transition duration-300 md:h-6 md:w-6"
+          onclick="toggleTheme()"
+        >
+          <div
+            id="switch-toggle"
+            class="relative h-5 w-5 -translate-x-2 transform rounded-full text-gray-600 transition duration-500 dark:text-gray-100 md:h-6 md:w-6"
+          ></div>
         </div>
-        <!--==================== Profile ====================-->
-        <section class="flex flex-col items-center justify-center mx-4">
-            <img class="rounded-full w-28 md:w-32 p-1 border-2 border-[#037efe]" src="https://raw.githubusercontent.com/ishre-yash/ishre-yash/main/shreyash.webp" alt="ShreYash, ishreyash">
-            <h2 class="mt-4 font-poppins text-2xl font-bold text-gray-800 dark:text-white">Shre Yash</h2>
-            <div class="font-poppins font-semibold text-xs text-gray-500 dark:text-gray-300 leading-normal mb-6"><span class="auto-input">Front End Developer</span></div>
-            <div class="flex flex-row items-center justify-center space-x-2">
-                <a href="https://twitter.com/ishre_yash">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current text-gray-600 dark:text-gray-100 hover:text-[#037efe] dark:hover:text-[#037efe]" viewBox="0 0 24 24"><path d="M22.99121,3.9502a.99942.99942,0,0,0-1.51074-.85938,7.47956,7.47956,0,0,1-1.873.793,5.15234,5.15234,0,0,0-3.374-1.24219,5.23238,5.23238,0,0,0-5.22363,5.06348A11.03194,11.03194,0,0,1,4.19629,3.78125,1.01154,1.01154,0,0,0,3.33887,3.416a.99852.99852,0,0,0-.78516.5,5.2755,5.2755,0,0,0-.24219,4.76855l-.00195.00195a1.0411,1.0411,0,0,0-.49512.88868,3.04174,3.04174,0,0,0,.02637.43945,5.1854,5.1854,0,0,0,1.56836,3.3125.99813.99813,0,0,0-.06641.76953,5.20436,5.20436,0,0,0,2.36231,2.92187,7.46464,7.46464,0,0,1-3.58985.44825.99975.99975,0,0,0-.665,1.833A12.94248,12.94248,0,0,0,8.46,21.36133,12.7878,12.7878,0,0,0,20.9248,11.998,12.82166,12.82166,0,0,0,21.46,8.35156c0-.06543,0-.13281-.001-.20019A5.76963,5.76963,0,0,0,22.99121,3.9502ZM19.68457,7.16211a.995.995,0,0,0-.2334.70215c.00977.165.00879.331.00879.4873a10.82371,10.82371,0,0,1-.4541,3.08106A10.68457,10.68457,0,0,1,8.46,19.36133a10.93791,10.93791,0,0,1-2.55078-.30078,9.47951,9.47951,0,0,0,2.94238-1.56348A1.00033,1.00033,0,0,0,8.25,15.71094a3.208,3.208,0,0,1-2.21387-.93457q.22413-.04248.44532-.10547a1.00026,1.00026,0,0,0-.08008-1.94336,3.19824,3.19824,0,0,1-2.25-1.72559,5.29929,5.29929,0,0,0,.54492.0459,1.02093,1.02093,0,0,0,.9834-.69629A.9998.9998,0,0,0,5.2793,9.21484,3.19559,3.19559,0,0,1,3.85547,6.542c0-.0664.00195-.13281.00586-.19824a13.01365,13.01365,0,0,0,8.209,3.47949,1.02046,1.02046,0,0,0,.81739-.3584,1.00037,1.00037,0,0,0,.206-.86816,3.15653,3.15653,0,0,1-.08691-.72852A3.23,3.23,0,0,1,16.2334,4.6416a3.18428,3.18428,0,0,1,2.34472,1.02051A.993.993,0,0,0,19.499,5.96a9.27073,9.27073,0,0,0,1.21192-.32226A6.68126,6.68126,0,0,1,19.68457,7.16211Z"/></svg>
-                </a>
-                <a href="https://www.linkedin.com/in/ishre-yash">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current text-gray-600 dark:text-gray-100 hover:text-[#037efe] dark:hover:text-[#037efe]" viewBox="0 0 24 24"><path d="M17.5,8.999a5.41868,5.41868,0,0,0-2.56543.64453A.99918.99918,0,0,0,14,8.999H10a.99943.99943,0,0,0-1,1v12a.99942.99942,0,0,0,1,1h4a.99942.99942,0,0,0,1-1v-5.5a1,1,0,1,1,2,0v5.5a.99942.99942,0,0,0,1,1h4a.99942.99942,0,0,0,1-1v-7.5A5.50685,5.50685,0,0,0,17.5,8.999Zm3.5,12H19v-4.5a3,3,0,1,0-6,0v4.5H11v-10h2v.70313a1.00048,1.00048,0,0,0,1.78125.625A3.48258,3.48258,0,0,1,21,14.499Zm-14-12H3a.99943.99943,0,0,0-1,1v12a.99942.99942,0,0,0,1,1H7a.99942.99942,0,0,0,1-1v-12A.99943.99943,0,0,0,7,8.999Zm-1,12H4v-10H6ZM5.01465,1.542A3.23283,3.23283,0,1,0,4.958,7.999h.02832a3.23341,3.23341,0,1,0,.02832-6.457ZM4.98633,5.999H4.958A1.22193,1.22193,0,0,1,3.58887,4.77051c0-.7461.55957-1.22852,1.42578-1.22852A1.2335,1.2335,0,0,1,6.41113,4.77051C6.41113,5.5166,5.85156,5.999,4.98633,5.999Z"/></svg>
-                </a>
-                <a href="https://github.com/ishre-yash">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current text-gray-600 dark:text-gray-100 hover:text-[#037efe] dark:hover:text-[#037efe]" viewBox="0 0 24 24"><path d="M10.07031,20.50291a1.00008,1.00008,0,0,0-1.18115-.9834c-1.30908.24024-2.96191.27637-3.40137-.958a5.70754,5.70754,0,0,0-1.83691-2.415,1.20073,1.20073,0,0,1-.1665-.10938,1,1,0,0,0-.93067-.64551H2.54883a.99965.99965,0,0,0-1,.99512c-.00391.81543.811,1.33789,1.1416,1.51465a4.4408,4.4408,0,0,1,.92383,1.35937c.36426,1.02344,1.42285,2.57617,4.46582,2.376.001.03516.00195.06836.00244.09863l.00439.26758a1,1,0,0,0,2,0l-.00488-.31836C10.07715,21.4951,10.07031,21.22068,10.07031,20.50291Zm10.667-15.126c.03174-.125.063-.26367.09034-.41992a6.27792,6.27792,0,0,0-.40821-3.293,1.002,1.002,0,0,0-.61572-.58007c-.356-.12012-1.67041-.35645-4.18408,1.25a13.86918,13.86918,0,0,0-6.354,0C6.76221.751,5.45459.9658,5.10205,1.07908a.99744.99744,0,0,0-.63135.584,6.3003,6.3003,0,0,0-.40332,3.35644c.02442.12793.05078.2461.07813.35449A6.26928,6.26928,0,0,0,2.89014,9.20311a8.42168,8.42168,0,0,0,.04248.92187c.334,4.60254,3.334,5.98438,5.42431,6.459-.04345.125-.083.25878-.11816.40039a1.00023,1.00023,0,0,0,1.94238.47851,1.6784,1.6784,0,0,1,.46778-.87793.99947.99947,0,0,0-.5459-1.74512c-3.4541-.39453-4.95362-1.80175-5.1792-4.89843a6.61076,6.61076,0,0,1-.03369-.73828,4.25769,4.25769,0,0,1,.91943-2.71289,3.022,3.022,0,0,1,.1958-.23145.99988.99988,0,0,0,.188-1.02441,3.3876,3.3876,0,0,1-.15527-.55567A4.09356,4.09356,0,0,1,6.1167,3.06346a7.54263,7.54263,0,0,1,2.415,1.17968,1.00877,1.00877,0,0,0,.82764.13282,11.77716,11.77716,0,0,1,6.17285.001,1.00549,1.00549,0,0,0,.83056-.13769,7.572,7.572,0,0,1,2.40528-1.19043,4.03977,4.03977,0,0,1,.0874,1.57812,3.205,3.205,0,0,1-.16895.60743.9999.9999,0,0,0,.188,1.02441c.07715.08691.1543.18066.22363.26855A4.12186,4.12186,0,0,1,20,9.20311a7.03888,7.03888,0,0,1-.0376.77734c-.22021,3.05566-1.72558,4.46387-5.1958,4.85937a1,1,0,0,0-.54541,1.7461,1.63079,1.63079,0,0,1,.46631.9082,3.06079,3.06079,0,0,1,.09229.81934v2.334C14.77,21.2949,14.77,21.78025,14.77,22.00291a1,1,0,1,0,2,0c0-.2168,0-.69238.00977-1.33984V18.31346a4.8815,4.8815,0,0,0-.15479-1.31153,4.25638,4.25638,0,0,0-.11621-.416,6.51258,6.51258,0,0,0,5.44531-6.42383A8.69677,8.69677,0,0,0,22,9.20311,6.13062,6.13062,0,0,0,20.7373,5.37693Z"/></svg>
-                </a>
-            </div>
+      </div>
+      <!--==================== Profile ====================-->
+      <section class="mx-4 flex flex-col items-center justify-center">
+        <img
+          class="w-28 rounded-full border-2 border-[#037efe] p-1 md:w-32"
+          src="https://raw.githubusercontent.com/ishre-yash/ishre-yash/main/shreyash.webp"
+          alt="ShreYash, ishreyash"
+        />
+        <h2
+          class="mt-4 font-poppins text-2xl font-bold text-gray-800 dark:text-white"
+        >
+          Shre Yash
+        </h2>
+        <div
+          class="mb-6 font-poppins text-xs font-semibold leading-normal text-gray-500 dark:text-gray-300"
+        >
+          <span class="auto-input">Front End Developer</span>
+        </div>
+        <div class="flex flex-row items-center justify-center space-x-2">
+          <a href="https://twitter.com/ishre_yash">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 fill-current text-gray-600 hover:text-[#037efe] dark:text-gray-100 dark:hover:text-[#037efe]"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M22.99121,3.9502a.99942.99942,0,0,0-1.51074-.85938,7.47956,7.47956,0,0,1-1.873.793,5.15234,5.15234,0,0,0-3.374-1.24219,5.23238,5.23238,0,0,0-5.22363,5.06348A11.03194,11.03194,0,0,1,4.19629,3.78125,1.01154,1.01154,0,0,0,3.33887,3.416a.99852.99852,0,0,0-.78516.5,5.2755,5.2755,0,0,0-.24219,4.76855l-.00195.00195a1.0411,1.0411,0,0,0-.49512.88868,3.04174,3.04174,0,0,0,.02637.43945,5.1854,5.1854,0,0,0,1.56836,3.3125.99813.99813,0,0,0-.06641.76953,5.20436,5.20436,0,0,0,2.36231,2.92187,7.46464,7.46464,0,0,1-3.58985.44825.99975.99975,0,0,0-.665,1.833A12.94248,12.94248,0,0,0,8.46,21.36133,12.7878,12.7878,0,0,0,20.9248,11.998,12.82166,12.82166,0,0,0,21.46,8.35156c0-.06543,0-.13281-.001-.20019A5.76963,5.76963,0,0,0,22.99121,3.9502ZM19.68457,7.16211a.995.995,0,0,0-.2334.70215c.00977.165.00879.331.00879.4873a10.82371,10.82371,0,0,1-.4541,3.08106A10.68457,10.68457,0,0,1,8.46,19.36133a10.93791,10.93791,0,0,1-2.55078-.30078,9.47951,9.47951,0,0,0,2.94238-1.56348A1.00033,1.00033,0,0,0,8.25,15.71094a3.208,3.208,0,0,1-2.21387-.93457q.22413-.04248.44532-.10547a1.00026,1.00026,0,0,0-.08008-1.94336,3.19824,3.19824,0,0,1-2.25-1.72559,5.29929,5.29929,0,0,0,.54492.0459,1.02093,1.02093,0,0,0,.9834-.69629A.9998.9998,0,0,0,5.2793,9.21484,3.19559,3.19559,0,0,1,3.85547,6.542c0-.0664.00195-.13281.00586-.19824a13.01365,13.01365,0,0,0,8.209,3.47949,1.02046,1.02046,0,0,0,.81739-.3584,1.00037,1.00037,0,0,0,.206-.86816,3.15653,3.15653,0,0,1-.08691-.72852A3.23,3.23,0,0,1,16.2334,4.6416a3.18428,3.18428,0,0,1,2.34472,1.02051A.993.993,0,0,0,19.499,5.96a9.27073,9.27073,0,0,0,1.21192-.32226A6.68126,6.68126,0,0,1,19.68457,7.16211Z"
+              />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/ishre-yash">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 fill-current text-gray-600 hover:text-[#037efe] dark:text-gray-100 dark:hover:text-[#037efe]"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17.5,8.999a5.41868,5.41868,0,0,0-2.56543.64453A.99918.99918,0,0,0,14,8.999H10a.99943.99943,0,0,0-1,1v12a.99942.99942,0,0,0,1,1h4a.99942.99942,0,0,0,1-1v-5.5a1,1,0,1,1,2,0v5.5a.99942.99942,0,0,0,1,1h4a.99942.99942,0,0,0,1-1v-7.5A5.50685,5.50685,0,0,0,17.5,8.999Zm3.5,12H19v-4.5a3,3,0,1,0-6,0v4.5H11v-10h2v.70313a1.00048,1.00048,0,0,0,1.78125.625A3.48258,3.48258,0,0,1,21,14.499Zm-14-12H3a.99943.99943,0,0,0-1,1v12a.99942.99942,0,0,0,1,1H7a.99942.99942,0,0,0,1-1v-12A.99943.99943,0,0,0,7,8.999Zm-1,12H4v-10H6ZM5.01465,1.542A3.23283,3.23283,0,1,0,4.958,7.999h.02832a3.23341,3.23341,0,1,0,.02832-6.457ZM4.98633,5.999H4.958A1.22193,1.22193,0,0,1,3.58887,4.77051c0-.7461.55957-1.22852,1.42578-1.22852A1.2335,1.2335,0,0,1,6.41113,4.77051C6.41113,5.5166,5.85156,5.999,4.98633,5.999Z"
+              />
+            </svg>
+          </a>
+          <a href="https://github.com/ishre-yash">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 fill-current text-gray-600 hover:text-[#037efe] dark:text-gray-100 dark:hover:text-[#037efe]"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10.07031,20.50291a1.00008,1.00008,0,0,0-1.18115-.9834c-1.30908.24024-2.96191.27637-3.40137-.958a5.70754,5.70754,0,0,0-1.83691-2.415,1.20073,1.20073,0,0,1-.1665-.10938,1,1,0,0,0-.93067-.64551H2.54883a.99965.99965,0,0,0-1,.99512c-.00391.81543.811,1.33789,1.1416,1.51465a4.4408,4.4408,0,0,1,.92383,1.35937c.36426,1.02344,1.42285,2.57617,4.46582,2.376.001.03516.00195.06836.00244.09863l.00439.26758a1,1,0,0,0,2,0l-.00488-.31836C10.07715,21.4951,10.07031,21.22068,10.07031,20.50291Zm10.667-15.126c.03174-.125.063-.26367.09034-.41992a6.27792,6.27792,0,0,0-.40821-3.293,1.002,1.002,0,0,0-.61572-.58007c-.356-.12012-1.67041-.35645-4.18408,1.25a13.86918,13.86918,0,0,0-6.354,0C6.76221.751,5.45459.9658,5.10205,1.07908a.99744.99744,0,0,0-.63135.584,6.3003,6.3003,0,0,0-.40332,3.35644c.02442.12793.05078.2461.07813.35449A6.26928,6.26928,0,0,0,2.89014,9.20311a8.42168,8.42168,0,0,0,.04248.92187c.334,4.60254,3.334,5.98438,5.42431,6.459-.04345.125-.083.25878-.11816.40039a1.00023,1.00023,0,0,0,1.94238.47851,1.6784,1.6784,0,0,1,.46778-.87793.99947.99947,0,0,0-.5459-1.74512c-3.4541-.39453-4.95362-1.80175-5.1792-4.89843a6.61076,6.61076,0,0,1-.03369-.73828,4.25769,4.25769,0,0,1,.91943-2.71289,3.022,3.022,0,0,1,.1958-.23145.99988.99988,0,0,0,.188-1.02441,3.3876,3.3876,0,0,1-.15527-.55567A4.09356,4.09356,0,0,1,6.1167,3.06346a7.54263,7.54263,0,0,1,2.415,1.17968,1.00877,1.00877,0,0,0,.82764.13282,11.77716,11.77716,0,0,1,6.17285.001,1.00549,1.00549,0,0,0,.83056-.13769,7.572,7.572,0,0,1,2.40528-1.19043,4.03977,4.03977,0,0,1,.0874,1.57812,3.205,3.205,0,0,1-.16895.60743.9999.9999,0,0,0,.188,1.02441c.07715.08691.1543.18066.22363.26855A4.12186,4.12186,0,0,1,20,9.20311a7.03888,7.03888,0,0,1-.0376.77734c-.22021,3.05566-1.72558,4.46387-5.1958,4.85937a1,1,0,0,0-.54541,1.7461,1.63079,1.63079,0,0,1,.46631.9082,3.06079,3.06079,0,0,1,.09229.81934v2.334C14.77,21.2949,14.77,21.78025,14.77,22.00291a1,1,0,1,0,2,0c0-.2168,0-.69238.00977-1.33984V18.31346a4.8815,4.8815,0,0,0-.15479-1.31153,4.25638,4.25638,0,0,0-.11621-.416,6.51258,6.51258,0,0,0,5.44531-6.42383A8.69677,8.69677,0,0,0,22,9.20311,6.13062,6.13062,0,0,0,20.7373,5.37693Z"
+              />
+            </svg>
+          </a>
+        </div>
 
-            <div class="p-2">
-                <div class="container px-5 py-8 mx-auto">
-                    <div class="flex flex-wrap -m-4 text-center">
-                        <div class="w-1/3">
-                            <h2 class="title-font font-bold text-base text-gray-700 dark:text-white">1</h2>
-                            <p class="leading-relaxed font-semibold text-xs text-gray-500 dark:text-gray-300">Years of<br> work</p>
-                        </div>
-                        <div class="w-1/3">
-                            <h2 class="title-font font-bold text-base text-gray-700 dark:text-white">20+</h2>
-                            <p class="leading-relaxed font-semibold text-xs text-gray-500 dark:text-gray-300">Completed project
-                            </p>
-                        </div>
-                        <div class="w-1/3">
-                            <h2 class="title-font font-bold text-base text-gray-700 dark:text-white">2</h2>
-                            <p class="leading-relaxed font-semibold text-xs text-gray-500 dark:text-gray-300">Companies worked
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <div class="p-2">
+          <div class="container mx-auto px-5 py-8">
+            <div class="-m-4 flex flex-wrap text-center">
+              <div class="w-1/3">
+                <h2
+                  class="title-font text-base font-bold text-gray-700 dark:text-white"
+                >
+                  1
+                </h2>
+                <p
+                  class="text-xs font-semibold leading-relaxed text-gray-500 dark:text-gray-300"
+                >
+                  Years of<br />
+                  work
+                </p>
+              </div>
+              <div class="w-1/3">
+                <h2
+                  class="title-font text-base font-bold text-gray-700 dark:text-white"
+                >
+                  20+
+                </h2>
+                <p
+                  class="text-xs font-semibold leading-relaxed text-gray-500 dark:text-gray-300"
+                >
+                  Completed project
+                </p>
+              </div>
+              <div class="w-1/3">
+                <h2
+                  class="title-font text-base font-bold text-gray-700 dark:text-white"
+                >
+                  2
+                </h2>
+                <p
+                  class="text-xs font-semibold leading-relaxed text-gray-500 dark:text-gray-300"
+                >
+                  Companies worked
+                </p>
+              </div>
             </div>
+          </div>
+        </div>
 
-            <div class="flex flex-row items-center">
-                <a href="https://drive.google.com/file/d/1RxFBlBEvsDPMwNUCWwd-xP2E3n6Rs__D/view" class="flex flex-row bg-[#037efe]/80 hover:bg-[#037efe] text-white font-bold px-4 py-4 rounded-lg hover:shadow-xl hover:shadow-[#037efe]/50">Download CV
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current text-lg text-center text-white" viewBox="0 0 24 24"><path d="M8.29,13.29a1,1,0,0,0,0,1.42l3,3a1,1,0,0,0,1.42,0l3-3a1,1,0,0,0-1.42-1.42L13,14.59V3a1,1,0,0,0-2,0V14.59l-1.29-1.3A1,1,0,0,0,8.29,13.29ZM18,9H16a1,1,0,0,0,0,2h2a1,1,0,0,1,1,1v7a1,1,0,0,1-1,1H6a1,1,0,0,1-1-1V12a1,1,0,0,1,1-1H8A1,1,0,0,0,8,9H6a3,3,0,0,0-3,3v7a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V12A3,3,0,0,0,18,9Z"/></svg>
+        <div class="flex flex-row items-center">
+          <a
+            href="https://drive.google.com/file/d/1RxFBlBEvsDPMwNUCWwd-xP2E3n6Rs__D/view"
+            class="flex flex-row rounded-lg bg-[#037efe]/80 px-4 py-4 font-bold text-white hover:bg-[#037efe] hover:shadow-xl hover:shadow-[#037efe]/50"
+            >Download CV
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 fill-current text-center text-lg text-white"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8.29,13.29a1,1,0,0,0,0,1.42l3,3a1,1,0,0,0,1.42,0l3-3a1,1,0,0,0-1.42-1.42L13,14.59V3a1,1,0,0,0-2,0V14.59l-1.29-1.3A1,1,0,0,0,8.29,13.29ZM18,9H16a1,1,0,0,0,0,2h2a1,1,0,0,1,1,1v7a1,1,0,0,1-1,1H6a1,1,0,0,1-1-1V12a1,1,0,0,1,1-1H8A1,1,0,0,0,8,9H6a3,3,0,0,0-3,3v7a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V12A3,3,0,0,0,18,9Z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://ishre-yash.github.io/"
+            title="ShreYash - Portfolio"
+            class="m-1 ml-4 items-center rounded-lg bg-gray-200 p-3 hover:bg-gray-400 dark:bg-slate-800 dark:hover:bg-slate-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 fill-current text-center text-lg text-gray-700 dark:text-white"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,2A10,10,0,0,0,4.65,18.76h0a10,10,0,0,0,14.7,0h0A10,10,0,0,0,12,2Zm0,18a8,8,0,0,1-5.55-2.25,6,6,0,0,1,11.1,0A8,8,0,0,1,12,20ZM10,10a2,2,0,1,1,2,2A2,2,0,0,1,10,10Zm8.91,6A8,8,0,0,0,15,12.62a4,4,0,1,0-6,0A8,8,0,0,0,5.09,16,7.92,7.92,0,0,1,4,12a8,8,0,0,1,16,0A7.92,7.92,0,0,1,18.91,16Z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://ishreyash.com/"
+            title="ShreYash - HOME"
+            class="m-1 items-center rounded-lg bg-gray-200 p-3 hover:bg-gray-400 dark:bg-gray-800 dark:hover:bg-slate-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 fill-current text-center text-lg text-gray-700 dark:text-white"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M21.41,8.64s0,0,0-.05a10,10,0,0,0-18.78,0s0,0,0,.05a9.86,9.86,0,0,0,0,6.72s0,0,0,.05a10,10,0,0,0,18.78,0s0,0,0-.05a9.86,9.86,0,0,0,0-6.72ZM4.26,14a7.82,7.82,0,0,1,0-4H6.12a16.73,16.73,0,0,0,0,4Zm.82,2h1.4a12.15,12.15,0,0,0,1,2.57A8,8,0,0,1,5.08,16Zm1.4-8H5.08A8,8,0,0,1,7.45,5.43,12.15,12.15,0,0,0,6.48,8ZM11,19.7A6.34,6.34,0,0,1,8.57,16H11ZM11,14H8.14a14.36,14.36,0,0,1,0-4H11Zm0-6H8.57A6.34,6.34,0,0,1,11,4.3Zm7.92,0h-1.4a12.15,12.15,0,0,0-1-2.57A8,8,0,0,1,18.92,8ZM13,4.3A6.34,6.34,0,0,1,15.43,8H13Zm0,15.4V16h2.43A6.34,6.34,0,0,1,13,19.7ZM15.86,14H13V10h2.86a14.36,14.36,0,0,1,0,4Zm.69,4.57a12.15,12.15,0,0,0,1-2.57h1.4A8,8,0,0,1,16.55,18.57ZM19.74,14H17.88A16.16,16.16,0,0,0,18,12a16.28,16.28,0,0,0-.12-2h1.86a7.82,7.82,0,0,1,0,4Z"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div
+          class="mt-8 w-full rounded-xl bg-gray-200 p-2 dark:bg-slate-800 md:w-2/5"
+        >
+          <div
+            class="m-0 rounded-xl bg-gray-100 p-3 text-center text-base font-semibold dark:bg-slate-900"
+          >
+            Projects
+          </div>
+        </div>
+      </section>
+      <!--==================== Profile ====================-->
+
+      <section class="container mx-0 py-4">
+        <ul class="section mb-10 grid w-full grid-cols-1 gap-10 md:grid-cols-2">
+          <li
+            class="mt-8 w-full rounded-xl border-2 border-gray-200 bg-gray-100 p-2 shadow-gray-100 drop-shadow-lg dark:border-black dark:bg-slate-800 dark:shadow-slate-800"
+          >
+            <iframe
+              src="https://ishre-yash.github.io/"
+              class="h-[500px] w-full rounded-lg border-2 border-dashed border-[#037efe] opacity-75 hover:opacity-100"
+              title="TextUtils"
+            ></iframe>
+            <a
+              href="https://ishre-yash.github.io/"
+              title="ShreYash - Portfolio"
+              class="flex items-center justify-center"
+            >
+              <button
+                class="my-2 flex flex-row items-center justify-center rounded-lg bg-[#037efe] px-5 py-2.5 text-center text-sm font-medium text-white hover:shadow-xl hover:shadow-[#037efe]/50"
+              >
+                ShreYash - Portfolio
+              </button>
             </a>
-                <a href="https://ishre-yash.github.io/" title="ShreYash - Portfolio" class="ml-4 items-center p-3 m-1 rounded-lg bg-gray-200 hover:bg-gray-400 dark:bg-slate-800 dark:hover:bg-slate-700">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current text-lg text-center text-gray-700 dark:text-white" viewBox="0 0 24 24"><path d="M12,2A10,10,0,0,0,4.65,18.76h0a10,10,0,0,0,14.7,0h0A10,10,0,0,0,12,2Zm0,18a8,8,0,0,1-5.55-2.25,6,6,0,0,1,11.1,0A8,8,0,0,1,12,20ZM10,10a2,2,0,1,1,2,2A2,2,0,0,1,10,10Zm8.91,6A8,8,0,0,0,15,12.62a4,4,0,1,0-6,0A8,8,0,0,0,5.09,16,7.92,7.92,0,0,1,4,12a8,8,0,0,1,16,0A7.92,7.92,0,0,1,18.91,16Z"/></svg>
-                </a>
-                <a href="https://ishreyash.com/" title="ShreYash - HOME" class="items-center p-3 m-1 rounded-lg bg-gray-200 hover:bg-gray-400 dark:bg-gray-800 dark:hover:bg-slate-700">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current text-lg text-center text-gray-700 dark:text-white" viewBox="0 0 24 24"><path d="M21.41,8.64s0,0,0-.05a10,10,0,0,0-18.78,0s0,0,0,.05a9.86,9.86,0,0,0,0,6.72s0,0,0,.05a10,10,0,0,0,18.78,0s0,0,0-.05a9.86,9.86,0,0,0,0-6.72ZM4.26,14a7.82,7.82,0,0,1,0-4H6.12a16.73,16.73,0,0,0,0,4Zm.82,2h1.4a12.15,12.15,0,0,0,1,2.57A8,8,0,0,1,5.08,16Zm1.4-8H5.08A8,8,0,0,1,7.45,5.43,12.15,12.15,0,0,0,6.48,8ZM11,19.7A6.34,6.34,0,0,1,8.57,16H11ZM11,14H8.14a14.36,14.36,0,0,1,0-4H11Zm0-6H8.57A6.34,6.34,0,0,1,11,4.3Zm7.92,0h-1.4a12.15,12.15,0,0,0-1-2.57A8,8,0,0,1,18.92,8ZM13,4.3A6.34,6.34,0,0,1,15.43,8H13Zm0,15.4V16h2.43A6.34,6.34,0,0,1,13,19.7ZM15.86,14H13V10h2.86a14.36,14.36,0,0,1,0,4Zm.69,4.57a12.15,12.15,0,0,0,1-2.57h1.4A8,8,0,0,1,16.55,18.57ZM19.74,14H17.88A16.16,16.16,0,0,0,18,12a16.28,16.28,0,0,0-.12-2h1.86a7.82,7.82,0,0,1,0,4Z"/></svg>
-                </a>
-            </div>
-
-            <div class="mt-8 p-2 w-full md:w-2/5 rounded-xl bg-gray-200 dark:bg-slate-800">
-                <div class="text-center font-semibold text-base p-3 m-0 rounded-xl bg-gray-100 dark:bg-slate-900">
-                    Projects
-                </div>
-            </div>
-        </section>
-        <!--==================== Profile ====================-->
-
-        <section class="container mx-0 py-4">
-            <ul class="section grid grid-cols-1 md:grid-cols-2 gap-10 w-full mb-10 ">
-                <li class="w-full mt-8 p-2 rounded-xl  border-2 border-gray-200 dark:border-black bg-gray-100 dark:bg-slate-800  drop-shadow-lg  shadow-gray-100 dark:shadow-slate-800">
-                    <iframe src="https://ishre-yash.github.io/" class="w-full h-[500px] rounded-lg border-dashed border-2 border-[#037efe] opacity-75 hover:opacity-100" title="TextUtils"></iframe>
-                    <a href="https://ishre-yash.github.io/" title="ShreYash - Portfolio" class="flex justify-center items-center">
-                    <button class="flex flex-row  items-center justify-center text-white bg-[#037efe] font-medium rounded-lg text-sm px-5 py-2.5 text-center my-2 hover:shadow-xl hover:shadow-[#037efe]/50">
-                       ShreYash - Portfolio</button>
-                </a>
-            </li>
-                <li class="w-full mt-8 p-2 rounded-xl  border-2 border-gray-200 dark:border-black bg-gray-100 dark:bg-slate-800  drop-shadow-lg  shadow-gray-100 dark:shadow-slate-800">
-                        <iframe src="https://ishre-yash.github.io/TextUtils-ShreYash/" class="w-full h-[500px] rounded-lg border-dashed border-2 border-[#037efe] opacity-75 hover:opacity-100" title="TextUtils"></iframe>
-                        <a href="https://ishre-yash.github.io/TextUtils-ShreYash/" title="TextUtils" class="flex justify-center items-center">
-                            <button class="flex flex-row  items-center justify-center text-white bg-[#037efe] font-medium rounded-lg text-sm px-5 py-2.5 text-center my-2 hover:shadow-xl hover:shadow-[#037efe]/50">
-                                TextUtils</button>
-                        </a>
-                </li>
-                </ul>
-                <ul class="section grid grid-cols-1 md:grid-cols-2 gap-10 w-full mb-10 ">
-                <li class="w-full mt-8 p-2 rounded-xl  border-2 border-gray-200 dark:border-black bg-gray-100 dark:bg-slate-800  drop-shadow-lg  shadow-gray-100 dark:shadow-slate-800">
-                    <iframe src="/webpages/password-generator/index.html"  class="w-full h-[500px] rounded-lg border-dashed border-2 border-[#037efe] opacity-75 hover:opacity-100" title="Password Generator"></iframe>
-                    <a href="/webpages/password-generator/index.html" title="Password Generator" class="flex justify-center items-center">
-                        <button class="flex flex-row  items-center justify-center text-white bg-[#037efe] font-medium rounded-lg text-sm px-5 py-2.5 text-center my-2 hover:shadow-xl hover:shadow-[#037efe]/50">
-                            Password Generator</button>
-                    </a>
-                </li>
-                <li class="w-full mt-8 p-2 rounded-xl  border-2 border-gray-200 dark:border-black bg-gray-100 dark:bg-slate-800  drop-shadow-lg  shadow-gray-100 dark:shadow-slate-800">
-                    <iframe src="/webpages/movie-app/index.html" class="w-full h-[500px] rounded-lg border-dashed border-2 border-[#037efe] opacity-75 hover:opacity-100" title="Movie Search"></iframe>
-                    <a href="/webpages/movie-app/index.html" title="Movie Search" class="flex justify-center items-center">
-                        <button class="flex flex-row  items-center justify-center text-white bg-[#037efe] font-medium rounded-lg text-sm px-5 py-2.5 text-center my-2 hover:shadow-xl hover:shadow-[#037efe]/50">
-                            Movie Search</button>
-                    </a>
-                </li>
-                    
-            </ul>
-        </section>
-        <div class="w-full flex items-center justify-center">
-            <div class="mt-8 p-2 w-full md:w-2/5 rounded-xl bg-gray-200 dark:bg-slate-800">
-                <div class="text-center font-semibold text-base p-3 m-0 rounded-xl bg-gray-100 dark:bg-slate-900">
-                    Timeline
-                </div>
-            </div>
+          </li>
+          <li
+            class="mt-8 w-full rounded-xl border-2 border-gray-200 bg-gray-100 p-2 shadow-gray-100 drop-shadow-lg dark:border-black dark:bg-slate-800 dark:shadow-slate-800"
+          >
+            <iframe
+              src="https://ishre-yash.github.io/TextUtils-ShreYash/"
+              class="h-[500px] w-full rounded-lg border-2 border-dashed border-[#037efe] opacity-75 hover:opacity-100"
+              title="TextUtils"
+            ></iframe>
+            <a
+              href="https://ishre-yash.github.io/TextUtils-ShreYash/"
+              title="TextUtils"
+              class="flex items-center justify-center"
+            >
+              <button
+                class="my-2 flex flex-row items-center justify-center rounded-lg bg-[#037efe] px-5 py-2.5 text-center text-sm font-medium text-white hover:shadow-xl hover:shadow-[#037efe]/50"
+              >
+                TextUtils
+              </button>
+            </a>
+          </li>
+        </ul>
+        <ul class="section mb-10 grid w-full grid-cols-1 gap-10 md:grid-cols-2">
+          <li
+            class="mt-8 w-full rounded-xl border-2 border-gray-200 bg-gray-100 p-2 shadow-gray-100 drop-shadow-lg dark:border-black dark:bg-slate-800 dark:shadow-slate-800"
+          >
+            <iframe
+              src="/webpages/password-generator/index.html"
+              class="h-[500px] w-full rounded-lg border-2 border-dashed border-[#037efe] opacity-75 hover:opacity-100"
+              title="Password Generator"
+            ></iframe>
+            <a
+              href="/webpages/password-generator/index.html"
+              title="Password Generator"
+              class="flex items-center justify-center"
+            >
+              <button
+                class="my-2 flex flex-row items-center justify-center rounded-lg bg-[#037efe] px-5 py-2.5 text-center text-sm font-medium text-white hover:shadow-xl hover:shadow-[#037efe]/50"
+              >
+                Password Generator
+              </button>
+            </a>
+          </li>
+          <li
+            class="mt-8 w-full rounded-xl border-2 border-gray-200 bg-gray-100 p-2 shadow-gray-100 drop-shadow-lg dark:border-black dark:bg-slate-800 dark:shadow-slate-800"
+          >
+            <iframe
+              src="/webpages/movie-app/index.html"
+              class="h-[500px] w-full rounded-lg border-2 border-dashed border-[#037efe] opacity-75 hover:opacity-100"
+              title="Movie Search"
+            ></iframe>
+            <a
+              href="/webpages/movie-app/index.html"
+              title="Movie Search"
+              class="flex items-center justify-center"
+            >
+              <button
+                class="my-2 flex flex-row items-center justify-center rounded-lg bg-[#037efe] px-5 py-2.5 text-center text-sm font-medium text-white hover:shadow-xl hover:shadow-[#037efe]/50"
+              >
+                Movie Search
+              </button>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <div class="flex w-full items-center justify-center">
+        <div
+          class="mt-8 w-full rounded-xl bg-gray-200 p-2 dark:bg-slate-800 md:w-2/5"
+        >
+          <div
+            class="m-0 rounded-xl bg-gray-100 p-3 text-center text-base font-semibold dark:bg-slate-900"
+          >
+            Timeline
+          </div>
         </div>
-        
+      </div>
 
-    <section class="text-black dark:text-white body-font">
-        <div class="container px-5 py-14 mx-auto flex flex-wrap">
-            <div class="flex flex-wrap w-full">
-                <div class="md:pr-10 md:py-6">
-                    <div class="section flex relative pb-12 ">
-                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-700 pointer-events-none"></div>
-                        </div>
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-orange-500 inline-flex items-center justify-center text-white relative z-10">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="white">
-                                <path
-                                    d="M17,6.06a3,3,0,0,0-1.15,5.77A2,2,0,0,1,14,13.06H10a3.91,3.91,0,0,0-2,.56V7.88a3,3,0,1,0-2,0v8.36a3,3,0,1,0,2.16.05A2,2,0,0,1,10,15.06h4a4,4,0,0,0,3.91-3.16A3,3,0,0,0,17,6.06Zm-10-2a1,1,0,1,1-1,1A1,1,0,0,1,7,4.06Zm0,16a1,1,0,1,1,1-1A1,1,0,0,1,7,20.06Zm10-10a1,1,0,1,1,1-1A1,1,0,0,1,17,10.06Z" />
-                            </svg>
-                        </div>
-                        <a href="/" title="NULL">
-                            <div class="flex-grow mx-4 bg-gray-100 dark:bg-slate-800 drop-shadow-xl rounded-lg shadow-xl w-full lg:w-5/12 px-6 py-4 hover:-translate-y-1 hover:shadow-lg transition duration-200">
-                                <h3 class="mb-3 font-bold text-orange-400 text-xl">Working...</h3>
-                                <p class="text-sm leading-snug tracking-wide text-gray-900 dark:text-gray-100 text-opacity-100">Exploring New technologies building new Projects.</p>
-                              </div>
-                            </a>
-                        
-                    </div>
-                    
-                      
-                    <div class="section flex relative pb-12 ">
-                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-700 pointer-events-none"></div>
-                        </div>
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-orange-500 inline-flex items-center justify-center text-white relative z-10">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="white">
-                                <path
-                                    d="M17,6.06a3,3,0,0,0-1.15,5.77A2,2,0,0,1,14,13.06H10a3.91,3.91,0,0,0-2,.56V7.88a3,3,0,1,0-2,0v8.36a3,3,0,1,0,2.16.05A2,2,0,0,1,10,15.06h4a4,4,0,0,0,3.91-3.16A3,3,0,0,0,17,6.06Zm-10-2a1,1,0,1,1-1,1A1,1,0,0,1,7,4.06Zm0,16a1,1,0,1,1,1-1A1,1,0,0,1,7,20.06Zm10-10a1,1,0,1,1,1-1A1,1,0,0,1,17,10.06Z" />
-                            </svg>
-                        </div>
-                        <a href="https://tailwindly.vercel.app/" title="tailwindly">
-                        <div class="mx-4 bg-gray-100 dark:bg-slate-800 drop-shadow-xl rounded-lg shadow-xl w-full lg:w-5/12 px-6 py-4 hover:-translate-y-1 hover:shadow-lg transition duration-200 p-2">
-                            <h3 class="mb-3 font-bold text-orange-400 text-xl">tailwindly</h3>
-                            <p class="text-sm leading-snug tracking-wide text-gray-900 dark:text-gray-100 text-opacity-100">Over 50+ professionally designed, fully responsive. Tailwindly is a powerful frontend library of tailwind components enhanced by vanilla js. It helps you build interfaces with advanced interactions and animations.</p>
-                          </div>
-                        </a>
-                    </div>
-                    <div class="section flex relative pb-12 ">
-                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-700 pointer-events-none"></div>
-                        </div>
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-orange-500 inline-flex items-center justify-center text-white relative z-10">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="white">
-                                <path
-                                    d="M17,6.06a3,3,0,0,0-1.15,5.77A2,2,0,0,1,14,13.06H10a3.91,3.91,0,0,0-2,.56V7.88a3,3,0,1,0-2,0v8.36a3,3,0,1,0,2.16.05A2,2,0,0,1,10,15.06h4a4,4,0,0,0,3.91-3.16A3,3,0,0,0,17,6.06Zm-10-2a1,1,0,1,1-1,1A1,1,0,0,1,7,4.06Zm0,16a1,1,0,1,1,1-1A1,1,0,0,1,7,20.06Zm10-10a1,1,0,1,1,1-1A1,1,0,0,1,17,10.06Z" />
-                            </svg>
-                        </div>
-                        <a href="https://skandor.vercel.app/" title="skandor - E Commerce Market">
-                        <div class="mx-4 bg-gray-100 dark:bg-slate-800 drop-shadow-xl rounded-lg shadow-xl w-full lg:w-5/12 px-6 py-4 hover:-translate-y-1 hover:shadow-lg transition duration-200 p-2">
-                            <h3 class="mb-3 font-bold text-orange-400 text-xl">skandor - e commerce market</h3>
-                            <p class="text-sm leading-snug tracking-wide text-gray-900 dark:text-gray-100 text-opacity-100">Build with Next.js & tailwindcss</p>
-                          </div>
-                        </a>
-                    </div>
-
-                    <div class="section flex relative pb-12">
-                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-700 pointer-events-none"></div>
-                        </div>
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-500 inline-flex items-center justify-center text-white relative z-10">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                                <path d="M22 4L12 14.01l-3-3"></path>
-                            </svg>
-                        </div>
-                        <a href="https://iamshreyash.pythonanywhere.com/" title="Task Manager">
-                            <div class="mx-4 bg-gray-100 dark:bg-slate-800 drop-shadow-xl rounded-lg shadow-xl w-full lg:w-5/12 px-6 py-4 hover:-translate-y-1 hover:shadow-lg transition duration-200 p-2">
-                                <h3 class="mb-3 font-bold text-green-500 text-xl">Task Manager</h3>
-                                <p class="text-sm leading-snug tracking-wide text-gray-900 dark:text-gray-100 text-opacity-100"><b>Python</b> Using Flask Backend with Database to strore Data.</p>
-                              </div>
-                            </a>
-                    </div>
-
-                    <div class="section flex relative pb-12">
-                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-700 pointer-events-none"></div>
-                        </div>
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-500 inline-flex items-center justify-center text-white relative z-10">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="white">
-                                <path
-                                    d="M17,6.06a3,3,0,0,0-1.15,5.77A2,2,0,0,1,14,13.06H10a3.91,3.91,0,0,0-2,.56V7.88a3,3,0,1,0-2,0v8.36a3,3,0,1,0,2.16.05A2,2,0,0,1,10,15.06h4a4,4,0,0,0,3.91-3.16A3,3,0,0,0,17,6.06Zm-10-2a1,1,0,1,1-1,1A1,1,0,0,1,7,4.06Zm0,16a1,1,0,1,1,1-1A1,1,0,0,1,7,20.06Zm10-10a1,1,0,1,1,1-1A1,1,0,0,1,17,10.06Z" />
-                            </svg>
-                        </div>
-                        <a href="https://skandor.vercel.app/" title="Blog Website">
-                            <div class="mx-4 bg-gray-100 dark:bg-slate-800 drop-shadow-xl rounded-lg shadow-xl w-full lg:w-5/12 px-6 py-4 hover:-translate-y-1 hover:shadow-lg transition duration-200 p-2">
-                                <h3 class="mb-3 font-bold text-green-500 text-xl">Blog Website</h3>
-                                <p class="text-sm leading-snug tracking-wide text-gray-900 dark:text-gray-100 text-opacity-100"><b>HTML,tailwindcss,JS</b> Build my own Blogging Site.</p>
-                              </div>
-                            </a>
-                    </div>
-
-                    <div class="section flex relative pb-12">
-                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-700 pointer-events-none"></div>
-                        </div>
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-700 inline-flex items-center justify-center text-white relative z-10">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                                <path d="M22 4L12 14.01l-3-3"></path>
-                            </svg>
-                        </div>
-                        
-                        <a href="https://blog-nextjs-wine.vercel.app/feed/1/" title="News App">
-                            <div class="mx-4 bg-gray-100 dark:bg-slate-800 drop-shadow-xl rounded-lg shadow-xl w-full lg:w-5/12 px-6 py-4 hover:-translate-y-1 hover:shadow-lg transition duration-200 p-2">
-                                <h3 class="mb-3 font-bold text-green-500 text-xl">News App</h3>
-                                <p class="text-sm leading-snug tracking-wide text-gray-900 dark:text-gray-100 text-opacity-100"><b>React</b> Using News API To Generate My personal News App.</p>
-                              </div>
-                            </a>
-                    </div>
-
-                    <div class="section flex relative pb-12">
-                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-700 pointer-events-none"></div>
-                        </div>
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-700 inline-flex items-center justify-center text-white relative z-10">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                                <path d="M22 4L12 14.01l-3-3"></path>
-                            </svg>
-                        </div>
-                        <div class="flex-grow pl-4">
-                            <a class="font-medium title-font text-lg text-green-700 hover:underline mb-1 tracking-wider" href="https://github.com/ishre-yash/myProjects/tree/main/react/to-do-list-app">To Do
-                                ⭕</a>
-                            <p class="leading-relaxed">
-                                <b>React</b> Write Your to-do and Make it a List and Complete it.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="section flex relative pb-12">
-                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-700 pointer-events-none"></div>
-                        </div>
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                            </svg>
-                        </div>
-                        <div class="flex-grow pl-4">
-                            <a class="font-medium title-font text-lg text-blue-700 hover:underline mb-1 tracking-wider" href="https://github.com/ishre-yash/myProjects/tree/main/react/keeperWebapp">Keeper
-                                ⭕</a>
-                            <p class="leading-relaxed">
-                                <b>React</b> Clone of Google Keep Notes. Notes Taking App.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="section flex relative pb-12">
-                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-700 pointer-events-none"></div>
-                        </div>
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-700 inline-flex items-center justify-center text-white relative z-10">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                                <path d="M22 4L12 14.01l-3-3"></path>
-                            </svg>
-                        </div>
-                        <div class="flex-grow pl-4">
-                            <a class="font-medium title-font text-lg text-green-700 hover:underline mb-1 tracking-wider" href="https://ishre-yash.github.io/TextUtils-ShreYash/">TextUtils</a>
-                            <p class="leading-relaxed">
-                                <b>React</b> TextUtils is a utility which can we use to manipulate text.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="section flex relative pb-12">
-                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-700 pointer-events-none"></div>
-                        </div>
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                            </svg>
-                        </div>
-                        <div class="flex-grow pl-4">
-                            <a class="font-medium title-font text-lg text-blue-700 hover:underline mb-1 tracking-wider" href="/games/wordleClone/index.html">Wordle Clone</a>
-                            <p class="leading-relaxed">
-                                <b>Web Game</b> Clone of Popular Wordle Game.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="section flex relative pb-12">
-                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-700 pointer-events-none"></div>
-                        </div>
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-700 inline-flex items-center justify-center text-white relative z-10">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                                <path d="M22 4L12 14.01l-3-3"></path>
-                            </svg>
-                        </div>
-                        <div class="flex-grow pl-4">
-                            <a class="font-medium title-font text-lg text-green-700 hover:underline mb-1 tracking-wider" href="/webpages/password-generator/index.html">Password Generator</a>
-                            <p class="leading-relaxed">
-                                Generate a strong password for your login.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="section flex relative pb-12">
-                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-700 pointer-events-none"></div>
-                        </div>
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-700 inline-flex items-center justify-center text-white relative z-10">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                                <path d="M22 4L12 14.01l-3-3"></path>
-                            </svg>
-                        </div>
-                        <div class="flex-grow pl-4">
-                            <a class="font-medium title-font text-lg text-green-700 hover:underline mb-1 tracking-wider" href="/webpages/movie-app/index.html">Movie Search</a>
-                            <p class="leading-relaxed">
-                                Using themoviesm API to implement Movie Search Webpage and show movie Data.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="section flex relative pb-12">
-                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-700 pointer-events-none"></div>
-                        </div>
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-700 inline-flex items-center justify-center text-white relative z-10">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                                <path d="M22 4L12 14.01l-3-3"></path>
-                            </svg>
-                        </div>
-                        <div class="flex-grow pl-4">
-                            <a class="font-medium title-font text-lg text-green-700 hover:underline mb-1 tracking-wider" href="/webpages/github-profiles/index.html">Custom GitHub Profile Search</a>
-                            <p class="leading-relaxed">
-                                GitHub Information Card. Using GitHub API to retrieve Profile Data and Improve UI/UX Degine.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="section flex relative pb-12">
-                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-700 pointer-events-none"></div>
-                        </div>
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-600 inline-flex items-center justify-center text-white relative z-10">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                            </svg>
-                        </div>
-                        <div class="flex-grow pl-4">
-                            <a class="font-medium title-font text-lg text-green-600 hover:underline mb-1 tracking-wider" href="/webpages/notes-app/index.html">Write Notes</a>
-                            <p class="leading-relaxed">Write Your Notes and save it.</p>
-                        </div>
-                    </div>
-
-                    <div class="section flex relative pb-12">
-                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-700 pointer-events-none"></div>
-                        </div>
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-700 inline-flex items-center justify-center text-white relative z-10">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                                <path d="M22 4L12 14.01l-3-3"></path>
-                            </svg>
-                        </div>
-                        <div class="flex-grow pl-4">
-                            <a class="font-medium title-font text-lg text-green-700 hover:underline mb-1 tracking-wider" href="/webpages/quiz-app/index.html">Quiz Taker</a>
-                            <p class="leading-relaxed">
-                                Take Quiz Test Your Knowledge. Using opentdb API Data.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="section flex relative pb-12">
-                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-700 pointer-events-none"></div>
-                        </div>
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-orange-500 inline-flex items-center justify-center text-white relative z-10">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="white">
-                                <path
-                                    d="M17,6.06a3,3,0,0,0-1.15,5.77A2,2,0,0,1,14,13.06H10a3.91,3.91,0,0,0-2,.56V7.88a3,3,0,1,0-2,0v8.36a3,3,0,1,0,2.16.05A2,2,0,0,1,10,15.06h4a4,4,0,0,0,3.91-3.16A3,3,0,0,0,17,6.06Zm-10-2a1,1,0,1,1-1,1A1,1,0,0,1,7,4.06Zm0,16a1,1,0,1,1,1-1A1,1,0,0,1,7,20.06Zm10-10a1,1,0,1,1,1-1A1,1,0,0,1,17,10.06Z" />
-                            </svg>
-                        </div>
-                        <div class="flex-grow pl-4">
-                            <a class="font-medium title-font text-lg text-orange-600 hover:underline mb-1 tracking-wider" href="https://ishre-yash.github.io/">Personal Portfolio</a>
-                            <p class="leading-relaxed">
-                                <b>HTML,CSS,JS</b> Build my own Portfolio.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="section flex relative pb-12">
-                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-700 pointer-events-none"></div>
-                        </div>
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-orange-500 inline-flex items-center justify-center text-white relative z-10">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                                <path d="M22 4L12 14.01l-3-3"></path>
-                            </svg>
-                        </div>
-                        <div class="flex-grow pl-4">
-                            <a class="font-medium title-font text-lg text-orange-500 hover:underline mb-1 tracking-wider" href="/webpages/headerFooter/index.html">Portfolio Nav/Footer</a>
-                            <p class="leading-relaxed">
-                                Building Navbar and Footer for Personal Portfolio for reusable components.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="section flex relative pb-12">
-                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-700 pointer-events-none"></div>
-                        </div>
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-700 inline-flex items-center justify-center text-white relative z-10">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                                <path d="M22 4L12 14.01l-3-3"></path>
-                            </svg>
-                        </div>
-                        <div class="flex-grow pl-4">
-                            <a class="font-medium title-font text-lg text-green-700 hover:underline mb-1 tracking-wider" href="/games/pigGame/index.html">Pig Game</a>
-                            <p class="leading-relaxed">
-                                <b>Web Game</b> Two Players Game. Roll a dice if dice is 1 player changes or hold the score. if Any player get 100 Score that Player Wins!.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="section flex relative pb-12">
-                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-700 pointer-events-none"></div>
-                        </div>
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-700 inline-flex items-center justify-center text-white relative z-10">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                                <path d="M22 4L12 14.01l-3-3"></path>
-                            </svg>
-                        </div>
-                        <div class="flex-grow pl-4">
-                            <a class="font-medium title-font text-lg text-green-700 hover:underline mb-1 tracking-wider" href="/games/guessMyNumber/index.html">Guess My Number</a>
-                            <p class="leading-relaxed">
-                                <b>Web Game</b> To Guess a random number that computer generated. If you guess it you Win.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="section flex relative pb-12">
-                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-700 pointer-events-none"></div>
-                        </div>
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-700 inline-flex items-center justify-center text-white relative z-10">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                                <path d="M22 4L12 14.01l-3-3"></path>
-                            </svg>
-                        </div>
-                        <div class="flex-grow pl-4">
-                            <a class="font-medium title-font text-lg text-green-700 hover:underline mb-1 tracking-wider" href="/webpages/countdown-timer/index.html">New Year Counter</a>
-                            <p class="leading-relaxed">New Year Counter!</p>
-                        </div>
-                    </div>
-
-                    <div class="section flex relative pb-12">
-                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-700 pointer-events-none"></div>
-                        </div>
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-700 inline-flex items-center justify-center text-white relative z-10">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                                <path d="M22 4L12 14.01l-3-3"></path>
-                            </svg>
-                        </div>
-                        <div class="flex-grow pl-4">
-                            <a class="font-medium title-font text-lg text-green-700 hover:underline mb-1 tracking-wider" href="/games/scoreKeeper/index.html">Score Keeper</a>
-                            <p class="leading-relaxed">
-                                Record Your Score. Web Score Keeper Widget.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="section flex relative pb-12">
-                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-700 pointer-events-none"></div>
-                        </div>
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                            </svg>
-                        </div>
-                        <div class="flex-grow pl-4">
-                            <a class="font-medium title-font text-lg text-blue-700 hover:underline mb-1 tracking-wider" href="/webpages/website_for_Local_Business/index.html">Local Business</a>
-                            <p class="leading-relaxed">Local Business Wepside...</p>
-                        </div>
-                    </div>
-
-                    <div class="section flex relative pb-12">
-                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                            <div class="h-full w-1 bg-gray-700 pointer-events-none"></div>
-                        </div>
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-700 inline-flex items-center justify-center text-white relative z-10">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                                <path d="M22 4L12 14.01l-3-3"></path>
-                            </svg>
-                        </div>
-                        <div class="flex-grow pl-4">
-                            <a class="font-medium title-font text-lg text-green-700 hover:underline mb-1 tracking-wider" href="/webpages/pricingTable/index.html">Pricing Table</a>
-                            <p class="leading-relaxed">See All Pricing Plans table.</p>
-                        </div>
-                    </div>
-
-                    <div class="section flex relative">
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-700 inline-flex items-center justify-center text-white relative z-10">
-                        </div>
-                        <div class="flex-grow pl-4">
-                            <a class="font-medium title-font text-lg text-green-700 hover:underline mb-1 tracking-wider" href="/">Starting Web Development</a>
-                            <p class="leading-relaxed">starting-August,2021</p>
-                        </div>
-                    </div>
+      <section class="body-font text-black dark:text-white">
+        <div class="container mx-auto flex flex-wrap px-5 py-14">
+          <div class="flex w-full flex-wrap">
+            <div class="md:py-6 md:pr-10">
+              <div class="section relative flex pb-12">
+                <div
+                  class="absolute inset-0 flex h-full w-10 items-center justify-center"
+                >
+                  <div class="pointer-events-none h-full w-1 bg-gray-700"></div>
                 </div>
+                <div
+                  class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-orange-500 text-white"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                    fill="white"
+                  >
+                    <path
+                      d="M17,6.06a3,3,0,0,0-1.15,5.77A2,2,0,0,1,14,13.06H10a3.91,3.91,0,0,0-2,.56V7.88a3,3,0,1,0-2,0v8.36a3,3,0,1,0,2.16.05A2,2,0,0,1,10,15.06h4a4,4,0,0,0,3.91-3.16A3,3,0,0,0,17,6.06Zm-10-2a1,1,0,1,1-1,1A1,1,0,0,1,7,4.06Zm0,16a1,1,0,1,1,1-1A1,1,0,0,1,7,20.06Zm10-10a1,1,0,1,1,1-1A1,1,0,0,1,17,10.06Z"
+                    />
+                  </svg>
+                </div>
+                <a href="/" title="NULL">
+                  <div
+                    class="mx-4 w-full flex-grow rounded-lg bg-gray-100 px-6 py-4 shadow-xl drop-shadow-xl transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800 lg:w-5/12"
+                  >
+                    <h3 class="mb-3 text-xl font-bold text-orange-400">
+                      Working...
+                    </h3>
+                    <p
+                      class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-100"
+                    >
+                      Exploring New technologies building new Projects.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="section relative flex pb-12">
+                <div
+                  class="absolute inset-0 flex h-full w-10 items-center justify-center"
+                >
+                  <div class="pointer-events-none h-full w-1 bg-gray-700"></div>
+                </div>
+                <div
+                  class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-orange-500 text-white"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                    fill="white"
+                  >
+                    <path
+                      d="M17,6.06a3,3,0,0,0-1.15,5.77A2,2,0,0,1,14,13.06H10a3.91,3.91,0,0,0-2,.56V7.88a3,3,0,1,0-2,0v8.36a3,3,0,1,0,2.16.05A2,2,0,0,1,10,15.06h4a4,4,0,0,0,3.91-3.16A3,3,0,0,0,17,6.06Zm-10-2a1,1,0,1,1-1,1A1,1,0,0,1,7,4.06Zm0,16a1,1,0,1,1,1-1A1,1,0,0,1,7,20.06Zm10-10a1,1,0,1,1,1-1A1,1,0,0,1,17,10.06Z"
+                    />
+                  </svg>
+                </div>
+                <a href="https://tailwindly.vercel.app/" title="tailwindly">
+                  <div
+                    class="mx-4 w-full rounded-lg bg-gray-100 p-2 px-6 py-4 shadow-xl drop-shadow-xl transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800 lg:w-5/12"
+                  >
+                    <h3 class="mb-3 text-xl font-bold text-orange-400">
+                      tailwindly
+                    </h3>
+                    <p
+                      class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-100"
+                    >
+                      Over 50+ professionally designed, fully responsive.
+                      Tailwindly is a powerful frontend library of tailwind
+                      components enhanced by vanilla js. It helps you build
+                      interfaces with advanced interactions and animations.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="section relative flex pb-12">
+                <div
+                  class="absolute inset-0 flex h-full w-10 items-center justify-center"
+                >
+                  <div class="pointer-events-none h-full w-1 bg-gray-700"></div>
+                </div>
+                <div
+                  class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-orange-500 text-white"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                    fill="white"
+                  >
+                    <path
+                      d="M17,6.06a3,3,0,0,0-1.15,5.77A2,2,0,0,1,14,13.06H10a3.91,3.91,0,0,0-2,.56V7.88a3,3,0,1,0-2,0v8.36a3,3,0,1,0,2.16.05A2,2,0,0,1,10,15.06h4a4,4,0,0,0,3.91-3.16A3,3,0,0,0,17,6.06Zm-10-2a1,1,0,1,1-1,1A1,1,0,0,1,7,4.06Zm0,16a1,1,0,1,1,1-1A1,1,0,0,1,7,20.06Zm10-10a1,1,0,1,1,1-1A1,1,0,0,1,17,10.06Z"
+                    />
+                  </svg>
+                </div>
+                <a
+                  href="https://skandor.vercel.app/"
+                  title="skandor - E Commerce Market"
+                >
+                  <div
+                    class="mx-4 w-full rounded-lg bg-gray-100 p-2 px-6 py-4 shadow-xl drop-shadow-xl transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800 lg:w-5/12"
+                  >
+                    <h3 class="mb-3 text-xl font-bold text-orange-400">
+                      skandor - e commerce market
+                    </h3>
+                    <p
+                      class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-100"
+                    >
+                      Build with Next.js & tailwindcss
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="section relative flex pb-12">
+                <div
+                  class="absolute inset-0 flex h-full w-10 items-center justify-center"
+                >
+                  <div class="pointer-events-none h-full w-1 bg-gray-700"></div>
+                </div>
+                <div
+                  class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-green-500 text-white"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                </div>
+                <a
+                  href="https://iamshreyash.pythonanywhere.com/"
+                  title="Task Manager"
+                >
+                  <div
+                    class="mx-4 w-full rounded-lg bg-gray-100 p-2 px-6 py-4 shadow-xl drop-shadow-xl transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800 lg:w-5/12"
+                  >
+                    <h3 class="mb-3 text-xl font-bold text-green-500">
+                      Task Manager
+                    </h3>
+                    <p
+                      class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-100"
+                    >
+                      <b>Python</b> Using Flask Backend with Database to strore
+                      Data.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="section relative flex pb-12">
+                <div
+                  class="absolute inset-0 flex h-full w-10 items-center justify-center"
+                >
+                  <div class="pointer-events-none h-full w-1 bg-gray-700"></div>
+                </div>
+                <div
+                  class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-green-500 text-white"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                    fill="white"
+                  >
+                    <path
+                      d="M17,6.06a3,3,0,0,0-1.15,5.77A2,2,0,0,1,14,13.06H10a3.91,3.91,0,0,0-2,.56V7.88a3,3,0,1,0-2,0v8.36a3,3,0,1,0,2.16.05A2,2,0,0,1,10,15.06h4a4,4,0,0,0,3.91-3.16A3,3,0,0,0,17,6.06Zm-10-2a1,1,0,1,1-1,1A1,1,0,0,1,7,4.06Zm0,16a1,1,0,1,1,1-1A1,1,0,0,1,7,20.06Zm10-10a1,1,0,1,1,1-1A1,1,0,0,1,17,10.06Z"
+                    />
+                  </svg>
+                </div>
+                <a href="https://skandor.vercel.app/" title="Blog Website">
+                  <div
+                    class="mx-4 w-full rounded-lg bg-gray-100 p-2 px-6 py-4 shadow-xl drop-shadow-xl transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800 lg:w-5/12"
+                  >
+                    <h3 class="mb-3 text-xl font-bold text-green-500">
+                      Blog Website
+                    </h3>
+                    <p
+                      class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-100"
+                    >
+                      <b>HTML,tailwindcss,JS</b> Build my own Blogging Site.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="section relative flex pb-12">
+                <div
+                  class="absolute inset-0 flex h-full w-10 items-center justify-center"
+                >
+                  <div class="pointer-events-none h-full w-1 bg-gray-700"></div>
+                </div>
+                <div
+                  class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-green-500 text-white"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                </div>
+
+                <a
+                  href="https://blog-nextjs-wine.vercel.app/feed/1/"
+                  title="News App"
+                >
+                  <div
+                    class="mx-4 w-full rounded-lg bg-gray-100 p-2 px-6 py-4 shadow-xl drop-shadow-xl transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800 lg:w-5/12"
+                  >
+                    <h3 class="mb-3 text-xl font-bold text-green-500">
+                      News App
+                    </h3>
+                    <p
+                      class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-100"
+                    >
+                      <b>React</b> Using News API To Generate My personal News
+                      App.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="section relative flex pb-12">
+                <div
+                  class="absolute inset-0 flex h-full w-10 items-center justify-center"
+                >
+                  <div class="pointer-events-none h-full w-1 bg-gray-700"></div>
+                </div>
+                <div
+                  class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-green-500 text-white"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                </div>
+                <a
+                  href="https://github.com/ishre-yash/myProjects/tree/main/react/to-do-list"
+                  title="To Do"
+                >
+                  <div
+                    class="mx-4 w-full rounded-lg bg-gray-100 p-2 px-6 py-4 shadow-xl drop-shadow-xl transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800 lg:w-5/12"
+                  >
+                    <h3 class="mb-3 text-xl font-bold text-green-500">To Do</h3>
+                    <p
+                      class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-100"
+                    >
+                      <b>React</b> Write Your to-do and Make it a List and
+                      Complete it.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="section relative flex pb-12">
+                <div
+                  class="absolute inset-0 flex h-full w-10 items-center justify-center"
+                >
+                  <div class="pointer-events-none h-full w-1 bg-gray-700"></div>
+                </div>
+                <div
+                  class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-blue-700 text-white"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <a
+                  href="https://github.com/ishre-yash/myProjects/tree/main/react/keeperWebapp"
+                  title="Keeper"
+                >
+                  <div
+                    class="mx-4 w-full rounded-lg bg-gray-100 p-2 px-6 py-4 shadow-xl drop-shadow-xl transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800 lg:w-5/12"
+                  >
+                    <h3 class="mb-3 text-xl font-bold text-blue-500">Keeper</h3>
+                    <p
+                      class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-100"
+                    >
+                      <b>React</b> Clone of Google Keep Notes. Notes Taking App.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="section relative flex pb-12">
+                <div
+                  class="absolute inset-0 flex h-full w-10 items-center justify-center"
+                >
+                  <div class="pointer-events-none h-full w-1 bg-gray-700"></div>
+                </div>
+                <div
+                  class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-green-500 text-white"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                </div>
+                <a
+                  href="https://ishre-yash.github.io/TextUtils-ShreYash/"
+                  title="TextUtils"
+                >
+                  <div
+                    class="mx-4 w-full rounded-lg bg-gray-100 p-2 px-6 py-4 shadow-xl drop-shadow-xl transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800 lg:w-5/12"
+                  >
+                    <h3 class="mb-3 text-xl font-bold text-green-500">
+                      TextUtils
+                    </h3>
+                    <p
+                      class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-100"
+                    >
+                      <b>React</b> Write Your to-do and Make it a List and
+                      Complete it.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="section relative flex pb-12">
+                <div
+                  class="absolute inset-0 flex h-full w-10 items-center justify-center"
+                >
+                  <div class="pointer-events-none h-full w-1 bg-gray-700"></div>
+                </div>
+                <div
+                  class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-blue-700 text-white"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <a href="/games/wordleClone/index.html" title="Wordle Clone">
+                  <div
+                    class="mx-4 w-full rounded-lg bg-gray-100 p-2 px-6 py-4 shadow-xl drop-shadow-xl transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800 lg:w-5/12"
+                  >
+                    <h3 class="mb-3 text-xl font-bold text-blue-500">
+                      Wordle Clone
+                    </h3>
+                    <p
+                      class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-100"
+                    >
+                      <b>Web Game</b> Clone of Popular Wordle Game.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="section relative flex pb-12">
+                <div
+                  class="absolute inset-0 flex h-full w-10 items-center justify-center"
+                >
+                  <div class="pointer-events-none h-full w-1 bg-gray-700"></div>
+                </div>
+                <div
+                  class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-green-500 text-white"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                </div>
+                <a
+                  href="/webpages/password-generator/index.html"
+                  title="Password Generator"
+                >
+                  <div
+                    class="mx-4 w-full rounded-lg bg-gray-100 p-2 px-6 py-4 shadow-xl drop-shadow-xl transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800 lg:w-5/12"
+                  >
+                    <h3 class="mb-3 text-xl font-bold text-green-500">
+                      Password Generator
+                    </h3>
+                    <p
+                      class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-100"
+                    >
+                      Generate a strong password for your login.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="section relative flex pb-12">
+                <div
+                  class="absolute inset-0 flex h-full w-10 items-center justify-center"
+                >
+                  <div class="pointer-events-none h-full w-1 bg-gray-700"></div>
+                </div>
+                <div
+                  class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-green-500 text-white"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                </div>
+                <a href="/webpages/movie-app/index.html" title="Movie Search">
+                  <div
+                    class="mx-4 w-full rounded-lg bg-gray-100 p-2 px-6 py-4 shadow-xl drop-shadow-xl transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800 lg:w-5/12"
+                  >
+                    <h3 class="mb-3 text-xl font-bold text-green-500">
+                      Movie Search
+                    </h3>
+                    <p
+                      class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-100"
+                    >
+                      Using themoviesm API to implement Movie Search Webpage and
+                      show movie Data.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="section relative flex pb-12">
+                <div
+                  class="absolute inset-0 flex h-full w-10 items-center justify-center"
+                >
+                  <div class="pointer-events-none h-full w-1 bg-gray-700"></div>
+                </div>
+                <div
+                  class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-green-500 text-white"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                </div>
+                <a
+                  href="/webpages/github-profiles/index.html"
+                  title="Custom GitHub Profile Search"
+                >
+                  <div
+                    class="mx-4 w-full rounded-lg bg-gray-100 p-2 px-6 py-4 shadow-xl drop-shadow-xl transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800 lg:w-5/12"
+                  >
+                    <h3 class="mb-3 text-xl font-bold text-green-500">
+                      Custom GitHub Profile Search
+                    </h3>
+                    <p
+                      class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-100"
+                    >
+                      GitHub Information Card. Using GitHub API to retrieve
+                      Profile Data and Improve UI/UX Degine.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="section relative flex pb-12">
+                <div
+                  class="absolute inset-0 flex h-full w-10 items-center justify-center"
+                >
+                  <div class="pointer-events-none h-full w-1 bg-gray-700"></div>
+                </div>
+                <div
+                  class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-green-600 text-white"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <a href="/webpages/notes-app/index.html" title="Write Notes">
+                  <div
+                    class="mx-4 w-full rounded-lg bg-gray-100 p-2 px-6 py-4 shadow-xl drop-shadow-xl transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800 lg:w-5/12"
+                  >
+                    <h3 class="mb-3 text-xl font-bold text-green-500">
+                      Write Notes
+                    </h3>
+                    <p
+                      class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-100"
+                    >
+                      Write Your Notes and save it.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="section relative flex pb-12">
+                <div
+                  class="absolute inset-0 flex h-full w-10 items-center justify-center"
+                >
+                  <div class="pointer-events-none h-full w-1 bg-gray-700"></div>
+                </div>
+                <div
+                  class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-green-500 text-white"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                </div>
+                <a href="/webpages/quiz-app/index.html" title="Quiz Taker">
+                  <div
+                    class="mx-4 w-full rounded-lg bg-gray-100 p-2 px-6 py-4 shadow-xl drop-shadow-xl transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800 lg:w-5/12"
+                  >
+                    <h3 class="mb-3 text-xl font-bold text-green-500">
+                      Quiz Taker
+                    </h3>
+                    <p
+                      class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-100"
+                    >
+                      Take Quiz Test Your Knowledge. Using opentdb API Data.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="section relative flex pb-12">
+                <div
+                  class="absolute inset-0 flex h-full w-10 items-center justify-center"
+                >
+                  <div class="pointer-events-none h-full w-1 bg-gray-700"></div>
+                </div>
+                <div
+                  class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-orange-500 text-white"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                    fill="white"
+                  >
+                    <path
+                      d="M17,6.06a3,3,0,0,0-1.15,5.77A2,2,0,0,1,14,13.06H10a3.91,3.91,0,0,0-2,.56V7.88a3,3,0,1,0-2,0v8.36a3,3,0,1,0,2.16.05A2,2,0,0,1,10,15.06h4a4,4,0,0,0,3.91-3.16A3,3,0,0,0,17,6.06Zm-10-2a1,1,0,1,1-1,1A1,1,0,0,1,7,4.06Zm0,16a1,1,0,1,1,1-1A1,1,0,0,1,7,20.06Zm10-10a1,1,0,1,1,1-1A1,1,0,0,1,17,10.06Z"
+                    />
+                  </svg>
+                </div>
+                <a
+                  href="https://ishre-yash.github.io/"
+                  title="Personal Portfolio"
+                >
+                  <div
+                    class="mx-4 w-full rounded-lg bg-gray-100 p-2 px-6 py-4 shadow-xl drop-shadow-xl transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800 lg:w-5/12"
+                  >
+                    <h3 class="mb-3 text-xl font-bold text-orange-500">
+                      Personal Portfolio
+                    </h3>
+                    <p
+                      class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-100"
+                    >
+                      <b>HTML,CSS,JS</b> Build my own Portfolio.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="section relative flex pb-12">
+                <div
+                  class="absolute inset-0 flex h-full w-10 items-center justify-center"
+                >
+                  <div class="pointer-events-none h-full w-1 bg-gray-700"></div>
+                </div>
+                <div
+                  class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-orange-500 text-white"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                </div>
+                <a
+                  href="/webpages/headerFooter/index.html"
+                  title="Portfolio Nav/Footer"
+                >
+                  <div
+                    class="mx-4 w-full rounded-lg bg-gray-100 p-2 px-6 py-4 shadow-xl drop-shadow-xl transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800 lg:w-5/12"
+                  >
+                    <h3 class="mb-3 text-xl font-bold text-orange-500">
+                      Portfolio Nav/Footer
+                    </h3>
+                    <p
+                      class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-100"
+                    >
+                      Building Navbar and Footer for Personal Portfolio for
+                      reusable components.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="section relative flex pb-12">
+                <div
+                  class="absolute inset-0 flex h-full w-10 items-center justify-center"
+                >
+                  <div class="pointer-events-none h-full w-1 bg-gray-700"></div>
+                </div>
+                <div
+                  class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-green-500 text-white"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                </div>
+                <a href="/games/pigGame/index.html" title="Pig Game">
+                  <div
+                    class="mx-4 w-full rounded-lg bg-gray-100 p-2 px-6 py-4 shadow-xl drop-shadow-xl transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800 lg:w-5/12"
+                  >
+                    <h3 class="mb-3 text-xl font-bold text-green-500">
+                      Pig Game
+                    </h3>
+                    <p
+                      class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-100"
+                    >
+                      <b>Web Game</b> Two Players Game. Roll a dice if dice is 1
+                      player changes or hold the score. if Any player get 100
+                      Score that Player Wins!.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="section relative flex pb-12">
+                <div
+                  class="absolute inset-0 flex h-full w-10 items-center justify-center"
+                >
+                  <div class="pointer-events-none h-full w-1 bg-gray-700"></div>
+                </div>
+                <div
+                  class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-green-500 text-white"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                </div>
+                <a
+                  href="/games/guessMyNumber/index.html"
+                  title="Guess My Numbe"
+                >
+                  <div
+                    class="mx-4 w-full rounded-lg bg-gray-100 p-2 px-6 py-4 shadow-xl drop-shadow-xl transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800 lg:w-5/12"
+                  >
+                    <h3 class="mb-3 text-xl font-bold text-green-500">
+                      Guess My Numbe
+                    </h3>
+                    <p
+                      class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-100"
+                    >
+                      <b>Web Game</b> To Guess a random number that computer
+                      generated. If you guess it you Win.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="section relative flex pb-12">
+                <div
+                  class="absolute inset-0 flex h-full w-10 items-center justify-center"
+                >
+                  <div class="pointer-events-none h-full w-1 bg-gray-700"></div>
+                </div>
+                <div
+                  class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-green-500 text-white"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                </div>
+                <a
+                  href="/webpages/countdown-timer/index.html"
+                  title="New Year Counter"
+                >
+                  <div
+                    class="mx-4 w-full rounded-lg bg-gray-100 p-2 px-6 py-4 shadow-xl drop-shadow-xl transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800 lg:w-5/12"
+                  >
+                    <h3 class="mb-3 text-xl font-bold text-green-500">
+                      New Year Counter
+                    </h3>
+                    <p
+                      class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-100"
+                    ></p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="section relative flex pb-12">
+                <div
+                  class="absolute inset-0 flex h-full w-10 items-center justify-center"
+                >
+                  <div class="pointer-events-none h-full w-1 bg-gray-700"></div>
+                </div>
+                <div
+                  class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-green-500 text-white"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                </div>
+                <a href="/games/scoreKeeper/index.html" title="Score Keeper">
+                  <div
+                    class="mx-4 w-full rounded-lg bg-gray-100 p-2 px-6 py-4 shadow-xl drop-shadow-xl transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800 lg:w-5/12"
+                  >
+                    <h3 class="mb-3 text-xl font-bold text-green-500">
+                      Score Keeper
+                    </h3>
+                    <p
+                      class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-100"
+                    >
+                      Record Your Score. Web Score Keeper Widget.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="section relative flex pb-12">
+                <div
+                  class="absolute inset-0 flex h-full w-10 items-center justify-center"
+                >
+                  <div class="pointer-events-none h-full w-1 bg-gray-700"></div>
+                </div>
+                <div
+                  class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-green-500 text-white"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                </div>
+                <a
+                  href="/webpages/pricingTable/index.html"
+                  title="Pricing Table"
+                >
+                  <div
+                    class="mx-4 w-full rounded-lg bg-gray-100 p-2 px-6 py-4 shadow-xl drop-shadow-xl transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800 lg:w-5/12"
+                  >
+                    <h3 class="mb-3 text-xl font-bold text-green-500">
+                      Pricing Table
+                    </h3>
+                    <p
+                      class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-100"
+                    >
+                      See All Pricing Plans table.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="section relative flex">
+                <div
+                  class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-green-500 text-white"
+                ></div>
+                <a href="" title="Starting Web Development">
+                  <div
+                    class="mx-4 w-full rounded-lg bg-gray-100 p-2 px-6 py-4 shadow-xl drop-shadow-xl transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800 lg:w-5/12"
+                  >
+                    <h3 class="mb-3 text-xl font-bold text-green-500">
+                      Starting Web Development
+                    </h3>
+                    <p
+                      class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-100"
+                    >
+                      starting-August,2021
+                    </p>
+                  </div>
+                </a>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-</main>
+      </section>
+    </main>
 
     <!--==================== SCROLL TOP ====================-->
     <a href="#" class="scrollup bg-blue-500 hover:bg-blue-600" id="scroll-up">
-        <svg xmlns="http://www.w3.org/2000/svg" class="m-1" width="20" height="20" viewBox="0 0 24 24" fill="#FFF">
-            <path d="M12 0l8 9h-6v15h-4v-15h-6z" />
-        </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="m-1"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="#FFF"
+      >
+        <path d="M12 0l8 9h-6v15h-4v-15h-6z" />
+      </svg>
     </a>
     <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="assets/main.js"></script>
-</body>
-
+  </body>
 </html>
