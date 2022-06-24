@@ -1,11 +1,12 @@
 module.exports = {
-    content: ["*"],
-    darkMode: 'class',
-    theme: {
-        extend: {},
-        fontFamily: {
-            poppins: ["Poppins", "sans-serif"],
-        },
+  content: ["*"],
+  darkMode: "class",
+  theme: {
+    extend: {},
+    fontFamily: {
+      poppins: ["Poppins", "sans-serif"],
     },
-    plugins: [],
+  },
+  plugins: [require("tailwind-scrollbar-hide"),
+  require('prettier-plugin-tailwindcss'),]
 };

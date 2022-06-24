@@ -58,23 +58,27 @@
   </head>
 
   <body
-    class="mx-auto w-full max-w-4xl bg-[#fafdff] font-poppins leading-normal tracking-wider text-black antialiased dark:bg-slate-900 dark:text-white"
+    class="mx-auto w-full max-w-4xl bg-[#fafdff] font-poppins leading-normal tracking-wider text-black antialiased scrollbar-hide dark:bg-slate-900 dark:text-white"
   >
     <main>
       <!--==================== Dark Mode ====================-->
-      <div class="mt-8 mr-4 flex justify-end md:mt-12">
+      <div
+        class="fixed top-2 right-4 z-50 mt-8 mr-4 flex justify-end rounded-full bg-gray-100 p-2 drop-shadow-xl hover:shadow-xl dark:bg-slate-800 md:right-40 md:mt-12"
+      >
         <div
           class="flex h-5 w-5 items-center transition duration-300 md:h-6 md:w-6"
           onclick="toggleTheme()"
         >
           <div
             id="switch-toggle"
-            class="relative h-5 w-5 -translate-x-2 transform rounded-full text-gray-600 transition duration-500 dark:text-gray-100 md:h-6 md:w-6"
+            class="relative h-5 w-5 transform rounded-full text-gray-600 transition duration-500 dark:text-gray-100 md:h-6 md:w-6"
           ></div>
         </div>
       </div>
       <!--==================== Profile ====================-->
-      <section class="mx-4 flex flex-col items-center justify-center">
+      <section
+        class="mx-4 mt-8 mr-4 flex flex-col items-center justify-center md:mt-12"
+      >
         <img
           class="w-28 rounded-full border-2 border-[#037efe] p-1 md:w-32"
           src="https://raw.githubusercontent.com/ishre-yash/ishre-yash/main/shreyash.webp"
@@ -91,7 +95,7 @@
           <span class="auto-input">Front End Developer</span>
         </div>
         <div class="flex flex-row items-center justify-center space-x-2">
-          <a href="https://twitter.com/ishre_yash">
+          <a href="https://twitter.com/ishre_yash" title="twitter">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5 fill-current text-gray-600 hover:text-[#037efe] dark:text-gray-100 dark:hover:text-[#037efe]"
@@ -102,7 +106,7 @@
               />
             </svg>
           </a>
-          <a href="https://www.linkedin.com/in/ishre-yash">
+          <a href="https://www.linkedin.com/in/ishre-yash" title="linkedin">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5 fill-current text-gray-600 hover:text-[#037efe] dark:text-gray-100 dark:hover:text-[#037efe]"
@@ -113,7 +117,7 @@
               />
             </svg>
           </a>
-          <a href="https://github.com/ishre-yash">
+          <a href="https://github.com/ishre-yash" title="github">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5 fill-current text-gray-600 hover:text-[#037efe] dark:text-gray-100 dark:hover:text-[#037efe]"
@@ -172,7 +176,8 @@
 
         <div class="flex flex-row items-center">
           <a
-            href="https://drive.google.com/file/d/1RxFBlBEvsDPMwNUCWwd-xP2E3n6Rs__D/view"
+            href="https://www.canva.com/design/DAFCWpbdGTA/yXzTOnVIiP8S7d18pAIdXQ/view?utm_content=DAFCWpbdGTA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+            title="Download CV"
             class="flex flex-row rounded-lg bg-[#037efe]/80 px-4 py-4 font-bold text-white hover:bg-[#037efe] hover:shadow-xl hover:shadow-[#037efe]/50"
             >Download CV
             <svg
@@ -235,19 +240,19 @@
             class="mt-8 w-full rounded-xl border-2 border-gray-200 bg-gray-100 p-2 shadow-gray-100 drop-shadow-lg dark:border-black dark:bg-slate-800 dark:shadow-slate-800"
           >
             <iframe
-              src="https://ishre-yash.github.io/"
+              src="https://skandor.vercel.app/"
               class="h-[500px] w-full rounded-lg border-2 border-dashed border-[#037efe] opacity-75 hover:opacity-100"
               title="TextUtils"
             ></iframe>
             <a
-              href="https://ishre-yash.github.io/"
-              title="ShreYash - Portfolio"
+              href="https://skandor.vercel.app/"
+              title="skandor - e commerce market"
               class="flex items-center justify-center"
             >
               <button
                 class="my-2 flex flex-row items-center justify-center rounded-lg bg-[#037efe] px-5 py-2.5 text-center text-sm font-medium text-white hover:shadow-xl hover:shadow-[#037efe]/50"
               >
-                ShreYash - Portfolio
+                skandor - e commerce market
               </button>
             </a>
           </li>
@@ -255,19 +260,19 @@
             class="mt-8 w-full rounded-xl border-2 border-gray-200 bg-gray-100 p-2 shadow-gray-100 drop-shadow-lg dark:border-black dark:bg-slate-800 dark:shadow-slate-800"
           >
             <iframe
-              src="https://ishre-yash.github.io/TextUtils-ShreYash/"
+              src="https://tailwindly.vercel.app/"
               class="h-[500px] w-full rounded-lg border-2 border-dashed border-[#037efe] opacity-75 hover:opacity-100"
-              title="TextUtils"
+              title="tailwindly"
             ></iframe>
             <a
-              href="https://ishre-yash.github.io/TextUtils-ShreYash/"
-              title="TextUtils"
+              href="https://tailwindly.vercel.app/"
+              title="tailwindly"
               class="flex items-center justify-center"
             >
               <button
                 class="my-2 flex flex-row items-center justify-center rounded-lg bg-[#037efe] px-5 py-2.5 text-center text-sm font-medium text-white hover:shadow-xl hover:shadow-[#037efe]/50"
               >
-                TextUtils
+                tailwindly
               </button>
             </a>
           </li>
@@ -506,7 +511,10 @@
                     />
                   </svg>
                 </div>
-                <a href="https://skandor.vercel.app/" title="Blog Website">
+                <a
+                  href="https://blog-nextjs-wine.vercel.app/"
+                  title="Blog Website"
+                >
                   <div
                     class="mx-4 w-full rounded-lg bg-gray-100 p-2 px-6 py-4 shadow-xl drop-shadow-xl transition duration-200 hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800 lg:w-5/12"
                   >
