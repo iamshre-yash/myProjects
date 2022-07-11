@@ -9,6 +9,8 @@ jobs:
       with:
         node-version: '16.16.0'
     - name: Build the project
+      run: npm i
+    - name: Build the project
       run: npm run build
     - name: Setup finish
       run: echo "hurry!"
